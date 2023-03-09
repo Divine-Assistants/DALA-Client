@@ -12,6 +12,15 @@ export default function Home() {
       </Head>
       <main>
         <NavBar />
+        <section
+          className="pt-[124px] bg-[#004AAD] h-[1026px] relative"
+          style={{ overflow: "hidden" }}
+        >
+          <div
+            className="w-[850px] h-[650px] bg-red-200 rounded-[50%] absolute"
+            style={{ transform: "rotate(-50deg)", right: "-200px" }}
+          ></div>
+        </section>
       </main>
     </>
   );
