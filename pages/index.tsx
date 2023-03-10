@@ -1,5 +1,14 @@
 import Head from "next/head";
-import { Button, FrontSection, Gain, NavBar, WhoWeAre } from "@/components";
+import {
+  Button,
+  FrontSection,
+  Gain,
+  NavBar,
+  Recommendations,
+  Testimonials,
+  WhoWeAre,
+} from "@/components";
+import { WhyDala } from "@/components/HomeComponents/WhyDALA";
 
 export default function Home() {
   return (
@@ -41,6 +50,9 @@ export default function Home() {
         </div>
         <WhoWeAre />
         <Gain />
+        <Recommendations />
+        <WhyDala />
+        <Testimonials />
       </main>
     </>
   );

@@ -3,7 +3,7 @@ import React from "react";
 
 export function WhoWeAre() {
   return (
-    <section className="px-[135px] grid grid-cols-2 gap-x-[168px] bg-gray-200 pt-[320px] pb-[422px]">
+    <section className="px-[135px] grid grid-cols-2 gap-x-[100px] pt-[320px] pb-[422px]">
       {" "}
       <div>
         <img

@@ -8,7 +8,7 @@ export function NavBar() {
 
   return (
     <header
-      className="py-[13px] px-[99px] flex items-center gap-x-[5%] justify-between fixed w-full bg-[#FAFAFA]"
+      className="py-[13px] px-[99px] flex items-center gap-x-[5%] justify-between fixed w-full bg-white"
       style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.08)", zIndex: 100 }}
     >
       <Link href={"/"}>

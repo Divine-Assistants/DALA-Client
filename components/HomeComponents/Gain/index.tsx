@@ -18,7 +18,7 @@ export function Gain() {
           Here are some of the benefits of taking a course at DivineAssistants
           Learning Academy
         </p>
-        <div className="mt-[115px] grid grid-cols-3 gap-x-[95px]">
+        <div className="mt-[115px] grid grid-cols-3 gap-x-[50px]">
           <GainItems
             src="/images/life-time.svg"
             title="Life Time Access"
