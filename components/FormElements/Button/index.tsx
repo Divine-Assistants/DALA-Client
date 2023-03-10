@@ -15,6 +15,7 @@ interface ButtonProps {
   right?: string;
   shadow?: string;
   width?: string;
+  mt?: string;
 }
 
 export function Button({
@@ -32,10 +33,11 @@ export function Button({
   right = "0",
   text,
   width,
+  mt,
 }: ButtonProps) {
   return (
     <button
-      className="relative h-fit w-fit"
+      className="relative h-fit w-fit block"
       style={{
         color: `${color}`,
         paddingBlock: `${paddingBlock}`,
@@ -47,6 +49,7 @@ export function Button({
         border: `${border}`,
         boxShadow: `${shadow}`,
         width: `${width}`,
+        marginTop: `${mt}`,
       }}
     >
       {src && (
