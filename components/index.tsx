@@ -7,3 +7,6 @@ export * from "./HomeComponents/GainItems";
 export * from "./HomeComponents/Recommendations";
 export * from "./HomeComponents/WhoWeAre/index";
 export * from "./HomeComponents/Testimonials/index";
+export * from "./HomeComponents/Partnership";
+export * from "./HomeComponents/PartnershipCall/index";
+export * from "./HomeComponents/FacultyDonations/index";

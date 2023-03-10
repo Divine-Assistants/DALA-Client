@@ -1,9 +1,12 @@
 import Head from "next/head";
 import {
   Button,
+  FacultyDonations,
   FrontSection,
   Gain,
   NavBar,
+  Partnership,
+  PartnershipCall,
   Recommendations,
   Testimonials,
   WhoWeAre,
@@ -53,6 +56,9 @@ export default function Home() {
         <Recommendations />
         <WhyDala />
         <Testimonials />
+        <Partnership />
+        <PartnershipCall />
+        <FacultyDonations />
       </main>
     </>
   );

@@ -13,7 +13,7 @@ export function WhyDala() {
       </div>
       <div className="pl-[100px] py-[50px]">
         <h3 className="font-semibold text-[50px]">Why D.A.L.A.?</h3>
-        <p className="text-[28px] mt-[23px]">
+        <p className="text-[28px] mt-[23px] text-justify">
           Let's face it: you've probably already heard this a million times
           before: there are million-in-one programs in the world today that
           educate people and give them free education; nevertheless, there is

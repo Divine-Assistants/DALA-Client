@@ -2,7 +2,10 @@ import React from "react";
 
 export function Testimony() {
   return (
-    <div className="py-[29px] px-[58px] bg-white rounded-[15px]">
+    <div
+      className="py-[29px] px-[58px] bg-white rounded-[15px]"
+      style={{ boxShadow: "15px 15px 30px -6px rgba(0, 0, 0, 0.1)" }}
+    >
       <div>
         <img src="/images/Quote.svg" alt="quote"></img>
       </div>
