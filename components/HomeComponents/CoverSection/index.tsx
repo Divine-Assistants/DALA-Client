@@ -4,7 +4,7 @@ import { Button } from "../../FormElements/Button";
 export function FrontSection() {
   return (
     <section
-      className="pt-[124px] h-[1026px] relative flex items-center px-[108px]"
+      className="h-[1026px] relative flex items-center px-[108px]"
       style={{ overflow: "hidden" }}
     >
       <div style={{ flex: 0.5 }}>

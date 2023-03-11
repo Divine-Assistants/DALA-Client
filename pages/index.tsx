@@ -1,13 +1,18 @@
 import Head from "next/head";
 import {
   Button,
+  DalaTutor,
   FacultyDonations,
+  FrequentQuestions,
   FrontSection,
   Gain,
+  LatestNews,
   NavBar,
+  PageLayout,
   Partnership,
   PartnershipCall,
   Recommendations,
+  StartLearning,
   Testimonials,
   WhoWeAre,
 } from "@/components";
@@ -23,42 +28,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavBar />
-        <FrontSection />
-        <div className="h-[151px] relative">
-          <div
-            className=" absolute top-[-30%] left-[50%] h-fit grid grid-cols-3 bottom-0 py-[28px] px-[72px] rounded-[15px] w-[90%] z-50 mx-auto"
-            style={{
-              boxShadow: "15px 15px 15px rgba(0, 0, 0, 0.1)",
-              backgroundColor: "#fff",
-              transform: "TranslateX(-50%)",
-            }}
-          >
-            <div>
-              <p className="font-semibold text-[55px] text-center">
-                20k+ <span className="text-[32px]">students</span>
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold text-[55px] text-center">
-                70+ <span className="text-[32px]">tutors</span>
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold text-[55px] text-center">
-                150+ <span className="text-[32px]">courses</span>
-              </p>
+        <PageLayout>
+          <FrontSection />
+          <div className="h-[151px] relative">
+            <div
+              className=" absolute top-[-30%] left-[50%] h-fit grid grid-cols-3 bottom-0 py-[28px] px-[72px] rounded-[15px] w-[90%] z-50 mx-auto"
+              style={{
+                boxShadow: "15px 15px 15px rgba(0, 0, 0, 0.1)",
+                backgroundColor: "#fff",
+                transform: "TranslateX(-50%)",
+              }}
+            >
+              <div>
+                <p className="font-semibold text-[55px] text-center">
+                  20k+ <span className="text-[32px]">students</span>
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-[55px] text-center">
+                  70+ <span className="text-[32px]">tutors</span>
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-[55px] text-center">
+                  150+ <span className="text-[32px]">courses</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <WhoWeAre />
-        <Gain />
-        <Recommendations />
-        <WhyDala />
-        <Testimonials />
-        <Partnership />
-        <PartnershipCall />
-        <FacultyDonations />
+          <WhoWeAre />
+          <Gain />
+          <Recommendations />
+          <WhyDala />
+          <Testimonials />
+          <Partnership />
+          <PartnershipCall />
+          <FacultyDonations />
+          <LatestNews />
+          <FrequentQuestions />
+          <StartLearning />
+          <DalaTutor />
+        </PageLayout>
       </main>
     </>
   );

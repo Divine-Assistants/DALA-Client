@@ -16,6 +16,7 @@ interface ButtonProps {
   shadow?: string;
   width?: string;
   mt?: string;
+  ml?: string;
 }
 
 export function Button({
@@ -34,6 +35,7 @@ export function Button({
   text,
   width,
   mt,
+  ml,
 }: ButtonProps) {
   return (
     <button
@@ -50,6 +52,7 @@ export function Button({
         boxShadow: `${shadow}`,
         width: `${width}`,
         marginTop: `${mt}`,
+        marginLeft: `${ml}`,
       }}
     >
       {src && (

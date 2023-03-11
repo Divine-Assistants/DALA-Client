@@ -10,3 +10,8 @@ export * from "./HomeComponents/Testimonials/index";
 export * from "./HomeComponents/Partnership";
 export * from "./HomeComponents/PartnershipCall/index";
 export * from "./HomeComponents/FacultyDonations/index";
+export * from "./HomeComponents/LatestNews/index";
+export * from "./HomeComponents/FAQ/index";
+export * from "./HomeComponents/StartLearning";
+export * from "./HomeComponents/DalaTutor/index";
+export * from "./PageLayout/index";

@@ -16,3 +16,9 @@ body{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.learning-button button:hover{
+background-color: #fff;
+color: #004AAD;
+}
