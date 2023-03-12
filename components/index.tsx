@@ -15,3 +15,4 @@ export * from "./HomeComponents/FAQ/index";
 export * from "./HomeComponents/StartLearning";
 export * from "./HomeComponents/DalaTutor/index";
 export * from "./PageLayout/index";
+export * from "./FormElements/Input";

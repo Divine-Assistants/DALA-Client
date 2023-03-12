@@ -5,6 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      sm:'640px',
+      md:'768px',
+      md2:'900px',
+      lg:'1024px',
+      xl:'1280px',
+            },
     extend: {
       colors: {
         mine: '#004AAD'

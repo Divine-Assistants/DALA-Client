@@ -13,7 +13,7 @@ export function Recommend({
 }: RecommendationProps) {
   return (
     <div
-      className="p-[15px] bg-white rounded-[15px]"
+      className="p-[15px] bg-white rounded-[15px] mt-[25px] md:mt-0"
       style={{ boxShadow: "10px 10px 30px rgba(0, 0, 0, 0.12)" }}
     >
       <div className="rounded-[10px] overflow-hidden">

@@ -22,7 +22,7 @@ export function FrequentQuestions() {
         })}
       </div>
       <div
-        className="py-[52px] px-[40px] bg-white rounded-[15px] mt-[50px] flex justify-between"
+        className="hidden py-[52px] px-[40px] bg-white rounded-[15px] mt-[50px] md:flex justify-between"
         style={{ boxShadow: "20px 20px 52px rgba(0, 0, 0, 0.05)" }}
       >
         <div className="flex">

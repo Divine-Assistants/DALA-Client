@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../FormElements/Button";
+import { Input } from "../FormElements/Input";
 import { NavBar } from "../NavBar";
 
 interface LayoutProps {
@@ -11,7 +12,7 @@ export function PageLayout({ children }: LayoutProps) {
       <NavBar />
       <div className="h-[100vh]" style={{ overflowY: "auto" }}>
         {children}
-        <footer className="relative h-[850px]">
+        <footer className="hidden md:block relative h-[850px]">
           <img
             src="/images/blue-background.svg"
             alt="background"
@@ -28,7 +29,15 @@ export function PageLayout({ children }: LayoutProps) {
                   Stay up to date with the latest news, blogs and announcements
                 </p>
               </div>
-              <div>
+              <div className="flex gap-x-[20px]">
+                <Input
+                  type="email"
+                  placeholder="Email Address"
+                  paddingBlock="16px"
+                  paddingInline="20px"
+                  backgroundColor="rgba(250, 250, 250, 0.49)"
+                  rounded="15px"
+                />
                 <Button
                   text="Subscribe"
                   paddingBlock="17px"

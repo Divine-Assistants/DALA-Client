@@ -30,28 +30,31 @@ export default function Home() {
       <main>
         <PageLayout>
           <FrontSection />
-          <div className="h-[151px] relative">
+          <div className="h-[151px] relative bg-white">
             <div
               className=" absolute top-[-30%] left-[50%] h-fit grid grid-cols-3 bottom-0 py-[28px] px-[72px] rounded-[15px] w-[90%] z-50 mx-auto"
               style={{
                 boxShadow: "15px 15px 15px rgba(0, 0, 0, 0.1)",
-                backgroundColor: "#fff",
+                backgroundColor: "#F1F1F1",
                 transform: "TranslateX(-50%)",
               }}
             >
               <div>
-                <p className="font-semibold text-[55px] text-center">
-                  20k+ <span className="text-[32px]">students</span>
+                <p className="font-semibold text-[20px] md2:text-[55px] text-center">
+                  20k+{" "}
+                  <span className="text-[14px] md2:text-[32px]">students</span>
                 </p>
               </div>
               <div>
-                <p className="font-semibold text-[55px] text-center">
-                  70+ <span className="text-[32px]">tutors</span>
+                <p className="font-semibold text-[20px] md2:text-[55px] text-center">
+                  70+{" "}
+                  <span className="text-[14px] md2:text-[32px]">tutors</span>
                 </p>
               </div>
               <div>
-                <p className="font-semibold text-[55px] text-center">
-                  150+ <span className="text-[32px]">courses</span>
+                <p className="font-semibold text-[20px] md2:text-[55px] text-center">
+                  150+{" "}
+                  <span className="text-[14px] md2:text-[32px]">courses</span>
                 </p>
               </div>
             </div>

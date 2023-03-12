@@ -3,16 +3,20 @@ import { Recommend } from "./Recommend";
 
 export function Recommendations() {
   return (
-    <section className="px-[95px] py-[422px]">
+    <section className="px-[28px] lg:px-[95px] py-[200px] lg:py-[422px]">
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-[50px]">Recommended for you</h3>
-        <p className="text-[28px] text-mine cursor-pointer">view all</p>
+        <h3 className="font-semibold text-[24px] md2:text-[50px]">
+          Recommended <span className="hidden md2:inline">for you</span>
+        </h3>
+        <p className="text-[16px] md2:text-[28px] text-mine cursor-pointer">
+          view all
+        </p>
       </div>
-      <p className="text-[28px] mt-[2px] w-[60%]">
+      <p className="text-[16px] md2:text-[28px] mt-[2px] md:w-[80%] md2:w-[60%]">
         Browse through our recommended courses to get started with your learning
         journey
       </p>
-      <div className="grid grid-cols-3 mt-[50px] gap-[20px]">
+      <div className="md:grid md:grid-cols-2 xl:grid-cols-3 mt-[50px] gap-[20px]">
         <Recommend
           coverImg="/images/recommendation-img-1.svg"
           category="Development"
