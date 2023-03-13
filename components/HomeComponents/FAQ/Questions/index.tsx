@@ -11,8 +11,10 @@ export function Questions({ question, answer }: QuestionsProps) {
       className="p-[15px] rounded-[15px]"
       style={{ border: "1px solid gray" }}
     >
-      <p className="font-semibold text-[25px]">What is D.A.L.A.?</p>
-      <p className="text-[22px] mt-[10px] text-justify">
+      <p className="font-semibold md:text-[25px] text-[16px]">
+        What is D.A.L.A.?
+      </p>
+      <p className="md:text-[22px] mt-[10px] text-justify text-[13px]">
         D.A.L.A. is an online, non-profit learning academy that seeks to bridge
         the digital divide by providing online learning resources to young
         individuals from all backgrounds. By introducing them to the world of

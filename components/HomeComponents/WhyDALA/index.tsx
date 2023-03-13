@@ -2,7 +2,7 @@ import React from "react";
 
 export function WhyDala() {
   return (
-    <section className="lg:grid grid-cols-2 px-[28px] lg:px-[95px]">
+    <section className="flex flex-col-reverse lg:grid grid-cols-2 px-[28px] lg:px-[95px]">
       <div className="grid place-items-center h-full rounded-[15px] overflow-hidden">
         <img
           src="/images/why-dala-img.svg"

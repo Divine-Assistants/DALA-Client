@@ -6,7 +6,7 @@ export function Testimonials() {
     <section className="pt-[200px] xl:pt-[422px] px-[28px] lg:px-[95px]">
       <div className="flex justify-between">
         <div>
-          <h3 className="font-semibold text-[24px] md2:text-[40px] ">
+          <h3 className="font-semibold text-[24px] md2:text-[40px] text-center md:text-left ">
             What others have to say about DALA
           </h3>
         </div>
@@ -19,10 +19,10 @@ export function Testimonials() {
           </div>
         </div>
       </div>
-      <p className="md2:text-[28px] text-[16px] mt-[10px] w-[80%]">
+      <p className="md2:text-[28px] text-[16px] mt-[10px] md:w-[80%] text-center md:text-left">
         Here are some key expert reviews and customer testimonial about D.A.L.A.
       </p>
-      <div className="flex gap-x-[61px] mt-[37px]">
+      <div className="md:flex-row flex flex-col gap-x-[61px] gap-y-[30px] mt-[37px]">
         <Testimony />
         <Testimony />
       </div>

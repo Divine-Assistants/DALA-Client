@@ -3,12 +3,14 @@ import { Partner } from "./Partner";
 
 export function Partnership() {
   return (
-    <section className="px-[95px] py-[422px]">
-      <h3 className="font-semibold text-[50px]">Meet our Partners</h3>
-      <p className="text-[28px] mt-[10px]">
+    <section className="lg:px-[95px] px-[28px] py-[200px] xl:py-[422px]">
+      <h3 className="font-semibold text-[24px] md:text-[50px]">
+        Meet our Partners
+      </h3>
+      <p className="md:text-[28px] text-[16px] mt-[10px]">
         Discover the individuals and people we work with to achieve our goals
       </p>
-      <div className="mt-[59px] grid grid-cols-2 gap-x-[100px]">
+      <div className="mt-[59px] flex flex-col gap-y-[20px] md:grid grid-cols-2 gap-x-[100px]">
         <Partner
           coverImg="/images/partner1.svg"
           name="Shashikanth Barrenkula"

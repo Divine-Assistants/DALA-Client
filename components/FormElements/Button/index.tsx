@@ -39,7 +39,7 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className="relative h-fit w-fit block"
+      className={`relative h-fit w-fit block`}
       style={{
         color: `${color}`,
         paddingBlock: `${paddingBlock}`,

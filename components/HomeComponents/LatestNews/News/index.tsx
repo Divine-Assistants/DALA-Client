@@ -21,10 +21,16 @@ export function News({
         <img src={coverImg} alt="news cover"></img>
       </div>
       <div className="mt-[15px]">
-        <p className="font-bold text-[15px] text-mine">{title}</p>
-        <p className="font-bold text-[15px] mt-[2px]">{description}</p>
-        <p className="text-[13px] mt-[2px]">{content}</p>
-        <p className="font-semibold text-[12px] mt-[5px]">{date}</p>
+        <p className="font-bold text-[10px] md2:text-[15px] text-mine">
+          {title}
+        </p>
+        <p className="font-bold text-[13px] md2:text-[15px] mt-[2px]">
+          {description}
+        </p>
+        <p className="md2:text-[13px] text-[10px] mt-[2px]">{content}</p>
+        <p className="font-semibold text-[10px] md2:text-[12px] mt-[5px]">
+          {date}
+        </p>
       </div>
     </div>
   );

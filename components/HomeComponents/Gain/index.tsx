@@ -3,7 +3,7 @@ import { GainItems } from "../GainItems";
 
 export function Gain() {
   return (
-    <section className="relative h-[1313px] xl:h-[850px] bg-red-300">
+    <section className="relative h-[1550px] sm:h-[1313px] xl:h-[850px] bg-red-300">
       <img
         src="/images/blue-background.svg"
         alt="background"

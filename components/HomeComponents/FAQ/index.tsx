@@ -4,13 +4,15 @@ import { Questions } from "./Questions";
 
 export function FrequentQuestions() {
   return (
-    <section className="py-[422px] px-[95px]">
-      <h3 className="font-semibold text-[40px]">Frequently Asked Questions</h3>
-      <p className="text-[24px] mt-[10px] w-[90%]">
+    <section className="xl:py-[422px] py-[200px] px-[28px] xl:px-[95px]">
+      <h3 className="font-semibold text-[24px] md:text-[40px]">
+        Frequently Asked Questions
+      </h3>
+      <p className="md:text-[24px] text-[16px] mt-[10px] w-[90%]">
         Everything you need to know about Divine Assistants Learning Academy.
         Can’t find the answers you are looking for? Contact our team.
       </p>
-      <div className="mt-[20px] grid grid-cols-3 gap-[15px]">
+      <div className="mt-[20px] grid grid-cols-1 md2:grid-cols-3 gap-[15px]">
         {[1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => {
           return (
             <Questions
@@ -22,11 +24,11 @@ export function FrequentQuestions() {
         })}
       </div>
       <div
-        className="hidden py-[52px] px-[40px] bg-white rounded-[15px] mt-[50px] md:flex justify-between"
+        className=" flex flex-col gap-y-[10px] items-center py-[52px] px-[22px] md2:px-[40px] bg-white rounded-[15px] mt-[50px] md2:flex-row justify-between"
         style={{ boxShadow: "20px 20px 52px rgba(0, 0, 0, 0.05)" }}
       >
-        <div className="flex">
-          <div className="w-[115px] h-[100px] rounded-[50%] grid place-items-center">
+        <div className="flex items-center justify-center gap-x-[10px]">
+          <div className="md2:w-[115px] md2:h-[100px] w-[64px] h-[64px] rounded-[50%] grid place-items-center z-10">
             <img
               src="/images/recommendation-avatar.svg"
               alt="avatar"
@@ -35,18 +37,20 @@ export function FrequentQuestions() {
             ></img>
           </div>
           <div>
-            <p className="font-semibold text-[25px]">Still have questions?</p>
-            <p className="text-[22px]">
+            <p className="font-semibold text-[16px] md2:text-[25px]">
+              Still have questions?
+            </p>
+            <p className="md2:text-[22px] text-[13px]">
               Can’t find the answers you’re looking for?, Get in touch with us!
             </p>
           </div>
         </div>
-        <div className="w-[40%]">
+        <div className="md2:w-[40%]">
           <Button
             paddingBlock="24px"
             color="white"
-            paddingInline="45px"
             backgroundColor="#004AAD"
+            paddingInline="45px"
             text="Get in Touch"
             ml="auto"
           />

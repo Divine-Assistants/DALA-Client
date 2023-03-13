@@ -3,15 +3,15 @@ import { Donors } from "./Donors";
 
 export function FacultyDonations() {
   return (
-    <section className="px-[95px] py-[422px]">
-      <h3 className="font-semibold text-[50px]">
+    <section className="xl:px-[95px] px-[28px] py-[200px] xl:py-[422px]">
+      <h3 className="font-semibold text-[24px] md:text-[50px]">
         Some of Our Faculty Donations
       </h3>
-      <p className="text-[28px] mt-[10px] w-[75%]">
+      <p className="md:text-[28px] text-[16px] mt-[10px] md:w-[75%]">
         Here are some of our generous contributors from our faculty members
         making a positive impact
       </p>
-      <div className="mt-[59px] grid grid-cols-2 gap-x-[100px]">
+      <div className="mt-[59px] flex flex-col-reverse gap-y-[20px] md:grid grid-cols-2 gap-x-[100px]">
         <Donors
           coverImg="/images/donor1.svg"
           name="Yasmin Abu-laban"
