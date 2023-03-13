@@ -22,3 +22,22 @@ body{
 background-color: #fff;
 color: #004AAD;
 }
+
+button{
+  font-size: 24px;
+}
+
+.FAQ-container{
+  border: 1px solid gray;
+}
+
+
+@media screen and (max-width: 640px) {
+  button {
+    font-size: 16px;
+  }
+  .FAQ-container{
+  border: 0;
+}
+
+}

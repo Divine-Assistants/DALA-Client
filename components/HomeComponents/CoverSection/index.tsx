@@ -3,7 +3,7 @@ import { Button } from "../../FormElements/Button";
 
 export function FrontSection() {
   return (
-    <section className="md2:h-[1026px] pt-[150px] text-center md2:text-left lg:pt-[50px] relative md2:flex items-center px-[16px] lg:px-[108px] md2:overflow-hidden">
+    <section className="md2:h-[1026px] pt-[56px] xl:pt-[150px] text-center md2:text-left lg:pt-[50px] relative md2:flex items-center px-[16px] lg:px-[108px] md2:overflow-hidden">
       <div style={{ flex: 0.5 }}>
         <h1 className="font-semibold text-[40px] md2:text-[50px] lg:text-[60px]">
           Kickstart your career in any field of your choice
@@ -44,7 +44,10 @@ export function FrontSection() {
         style={{ zIndex: 5 }}
       >
         <img src="/images/study-girl.svg" alt="model" className="mx-auto"></img>
-        <div className="absolute w-full bottom-[56px] md:hidden">
+        <div
+          className="absolute w-[80%] bottom-[56px] md:hidden grid place-items-center left-[50%]"
+          style={{ transform: "translateX(-50%)" }}
+        >
           <Button
             text="Get Started"
             paddingBlock="18px"
