@@ -10,7 +10,7 @@ export function PageLayout({ children }: LayoutProps) {
   return (
     <div className="h-[100vh]" style={{ overflow: "hidden" }}>
       <NavBar />
-      <div className="h-[100vh]" style={{ overflowY: "auto" }}>
+      <div className="h-[100vh] mt-[100px]" style={{ overflowY: "auto" }}>
         {children}
         <footer className="relative h-[1350px] md:h-[1400px] md2:h-[1200px] lg:h-[1100px]">
           <img
