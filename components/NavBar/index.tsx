@@ -32,7 +32,7 @@ export function NavBar() {
           <Link href={"/about"}>About</Link>
         </li>
         <li className="text-[20px]">
-          <Link href={"/blogs"}>News/Blogs</Link>
+          <Link href={"/news"}>News/Blogs</Link>
         </li>
         <li className="text-[20px]">
           <Link href={"/courses"}>Courses</Link>

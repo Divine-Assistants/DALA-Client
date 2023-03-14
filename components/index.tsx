@@ -16,3 +16,7 @@ export * from "./HomeComponents/StartLearning";
 export * from "./HomeComponents/DalaTutor/index";
 export * from "./PageLayout/index";
 export * from "./FormElements/Input";
+export * from "./BlogComponents/BlogCover";
+export * from "./BlogComponents/PopularNewsSection";
+export * from "./BlogComponents/FeaturedBlogSection";
+export * from "./BlogComponents/InspirationImage";
