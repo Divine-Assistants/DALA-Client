@@ -16,9 +16,13 @@ export function News({
   date,
 }: NewsProps) {
   return (
-    <div className="rounded-[15px] hover:bg-gray-300 cursor-pointer p-[10px]">
-      <div className="rounded-[15px]">
-        <img src={coverImg} alt="news cover"></img>
+    <div className="rounded-[15px] lg:hover:bg-gray-300 cursor-pointer p-[10px]">
+      <div className="rounded-[15px] h-[50%] overflow-hidden">
+        <img
+          src={coverImg}
+          alt="news cover"
+          className="w-full h-full object-cover"
+        ></img>
       </div>
       <div className="mt-[15px]">
         <p className="font-bold text-[10px] md2:text-[15px] text-mine">

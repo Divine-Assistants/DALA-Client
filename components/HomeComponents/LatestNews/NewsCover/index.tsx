@@ -3,7 +3,7 @@ import React from "react";
 export function NewsCover() {
   return (
     <div className="h-full flex flex-col justify-between">
-      <div className="rounded-[15px] h-[65%] bg-red-400 overflow-hidden">
+      <div className="rounded-[15px] h-[65%] overflow-hidden">
         <img
           src="/images/news-main-cover.svg"
           alt="news cover"

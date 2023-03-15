@@ -11,7 +11,7 @@ import React from "react";
 
 export default function News() {
   return (
-    <PageLayout>
+    <PageLayout title="News/Blogs">
       <BlogCover />
       <LatestNewsSection />
       <PopularNewsSection />

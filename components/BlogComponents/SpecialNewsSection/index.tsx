@@ -2,14 +2,14 @@ import React from "react";
 
 export function SpecialNewsSection() {
   return (
-    <section className="px-[28px] xl:px-[95px] py-[236px] xl:py-[412px]">
-      <div className="relative overflow-hidden hidden rounded-[15px] h-[658px] md:grid place-items-center">
+    <section className="md:px-[28px] xl:px-[95px] py-[236px] xl:py-[412px]">
+      <div className="relative overflow-hidden md:rounded-[15px] h-[1000px] md:h-[800px] md2:h-[600px] md:grid place-items-center">
         <img
           src="/images/blue-background.svg"
           alt="background"
-          className="w-full h-full object-cover hidden md:block"
+          className="w-full h-full object-cover"
         ></img>
-        <div className="w-full h-full z-20 absolute top-0 left-0 grid place-items-center xl:px-[100px] xl:py-[60px]">
+        <div className="w-full h-full z-20 absolute top-0 left-0 grid place-items-center px-[28px] py-[50px] xl:px-[100px] xl:py-[60px]">
           <p className="font-medium text-[24px] text-white text-center leading-9">
             We understand the importance of incorporating modern technology into
             our learning process so we use interactive teaching tools like

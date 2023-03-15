@@ -13,7 +13,7 @@ export function InspirationImage() {
       <div className="mt-[33px] rounded-[15px] overflow-hidden relative h-[225px]">
         <img src="/images/blue-background.svg" alt="background"></img>
         <div className="absolute top-0 left-0 grid place-items-center h-full w-full px-[120px] py-[50px]">
-          <p className="font-semibold text-[32px] text-white text-center">
+          <p className="font-semibold text-[18px] sm:text-[24px] md2:text-[32px] text-white text-center">
             We hope this image inspires your creativity the way it inspires us
             at DivineAssistants Learning Academy
           </p>
