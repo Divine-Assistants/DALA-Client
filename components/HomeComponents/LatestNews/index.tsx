@@ -27,6 +27,7 @@ export function LatestNews() {
             description="8 E-Commerce Email Marketing Best Practices To Boost Your ROI in 2022"
             content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
             date="November 9th 2023"
+            link={1}
           />
           <News
             coverImg="/images/news2.svg"
@@ -34,6 +35,7 @@ export function LatestNews() {
             description="8 E-Commerce Email Marketing Best Practices To Boost Your ROI in 2022"
             content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
             date="November 9th 2023"
+            link={1}
           />
           <News
             coverImg="/images/news3.svg"
@@ -41,6 +43,7 @@ export function LatestNews() {
             description="8 E-Commerce Email Marketing Best Practices To Boost Your ROI in 2022"
             content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
             date="November 9th 2023"
+            link={1}
           />
           <News
             coverImg="/images/news4.svg"
@@ -48,6 +51,7 @@ export function LatestNews() {
             description="8 E-Commerce Email Marketing Best Practices To Boost Your ROI in 2022"
             content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
             date="November 9th 2023"
+            link={1}
           />
         </div>
       </div>

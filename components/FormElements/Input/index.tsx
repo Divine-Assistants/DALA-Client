@@ -11,6 +11,10 @@ interface InputProps {
   weight?: string;
   color?: string;
   rounded?: string;
+  border?: string;
+  width?: string;
+  paddingRight?: string;
+  inputImg?: string;
 }
 
 export function Input({
@@ -23,21 +27,35 @@ export function Input({
   weight,
   color,
   rounded,
+  border,
+  width,
+  paddingRight,
+  inputImg,
 }: InputProps) {
   return (
-    <input
-      className="text-[24px] focus:outline-none placeholder:text-white"
-      type={type}
-      placeholder={placeholder}
-      style={{
-        paddingBlock: `${paddingBlock}`,
-        paddingInline: `${paddingInline}`,
-        backgroundColor: `${backgroundColor}`,
-        fontWeight: `${weight}`,
-        fontSize: `${size}`,
-        color: `${color}`,
-        borderRadius: `${rounded}`,
-      }}
-    ></input>
+    <div className="relative">
+      <input
+        className="text-[24px] focus:outline-none"
+        type={type}
+        placeholder={placeholder}
+        style={{
+          paddingBlock: `${paddingBlock}`,
+          paddingInline: `${paddingInline}`,
+          backgroundColor: `${backgroundColor}`,
+          fontWeight: `${weight}`,
+          fontSize: `${size}`,
+          color: `${color}`,
+          borderRadius: `${rounded}`,
+          border: `${border}`,
+          width: `${width}`,
+          paddingRight: `${paddingRight}`,
+        }}
+      ></input>
+      {inputImg && (
+        <div className="absolute right-0 top-0 h-full grid place-items-center px-[15px]">
+          <img src={inputImg} alt="search"></img>
+        </div>
+      )}
+    </div>
   );
 }

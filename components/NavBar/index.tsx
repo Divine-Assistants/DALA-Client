@@ -15,7 +15,7 @@ export function NavBar() {
       <Link href={"/"}>
         <div className="h-[94px] w-[79px]">
           <img
-            src="./images/Logo1.svg"
+            src="/images/Logo1.svg"
             className="w-full h-full"
             alt="logo"
           ></img>
