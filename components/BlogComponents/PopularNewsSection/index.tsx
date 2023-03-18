@@ -16,6 +16,7 @@ export function PopularNewsSection() {
                 description="8 E-Commerce Email Marketing Best Practices To Boost Your ROI in 2022"
                 content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
                 date="November 9th 2023"
+                link={index}
               />
             );
           }
