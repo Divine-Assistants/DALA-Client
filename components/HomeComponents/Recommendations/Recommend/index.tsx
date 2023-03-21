@@ -13,7 +13,7 @@ export function Recommend({
 }: RecommendationProps) {
   return (
     <div
-      className="p-[15px] bg-white rounded-[15px] mt-[25px] md:mt-0"
+      className="p-[15px] bg-white rounded-[15px] mt-[25px] md:mt-0 cursor-pointer hover:bg-gray-100"
       style={{ boxShadow: "10px 10px 30px rgba(0, 0, 0, 0.12)" }}
     >
       <div className="rounded-[10px] overflow-hidden">
@@ -44,7 +44,7 @@ export function Recommend({
           </div>
         </div>
         <div>
-          <p className="font-semibold text-[20px] text-mine">$ 84.99</p>
+          <p className="font-semibold text-[20px] text-mine">$84.99</p>
         </div>
       </div>
     </div>

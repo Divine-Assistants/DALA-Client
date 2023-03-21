@@ -15,6 +15,7 @@ interface InputProps {
   width?: string;
   paddingRight?: string;
   inputImg?: string;
+  name: string;
 }
 
 export function Input({
@@ -31,12 +32,14 @@ export function Input({
   width,
   paddingRight,
   inputImg,
+  name,
 }: InputProps) {
   return (
     <div className="relative">
       <input
-        className="text-[24px] focus:outline-none"
+        className="text-[20px] xl:text-[24px] focus:outline-none"
         type={type}
+        name={name}
         placeholder={placeholder}
         style={{
           paddingBlock: `${paddingBlock}`,

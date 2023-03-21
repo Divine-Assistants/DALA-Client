@@ -31,6 +31,26 @@ button{
   border: 1px solid gray;
 }
 
+.course-category::before{
+content:'';
+width: 12px;
+height: 12px;
+background-color: #fff;
+border: 2px solid #414141;
+border-radius: 3px;
+position: absolute;
+left: -20px;
+top: 5px;
+}
+
+.select-input-container input::placeholder{
+color: #8F8F8F;
+}
+
+.footer-input input::placeholder{
+  color: #fff;
+}
+
 
 @media screen and (max-width: 640px) {
   button {
@@ -39,5 +59,4 @@ button{
   .FAQ-container{
   border: 0;
 }
-
 }

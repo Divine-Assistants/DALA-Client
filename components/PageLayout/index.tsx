@@ -43,8 +43,9 @@ export function PageLayout({ children, title }: LayoutProps) {
                       announcements
                     </p>
                   </div>
-                  <div className="flex mt-[10px] md:mt-0 flex-col gap-y-[20px] items-center md:flex-row gap-x-[20px]">
+                  <div className="flex mt-[10px] md:mt-0 flex-col gap-y-[20px] items-center md:flex-row gap-x-[20px] footer-input">
                     <Input
+                      name="email-address"
                       type="email"
                       placeholder="Email Address"
                       paddingBlock="16px"
