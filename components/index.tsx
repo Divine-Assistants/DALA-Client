@@ -24,3 +24,4 @@ export * from "./BlogComponents/InspirationImage";
 export * from "./Modals/CoursesModal";
 export * from "./Modals/FilterModal";
 export * from "./CoursesComponents/TopCourses";
+export * from "./CoursesComponents/PurchaseCourse";

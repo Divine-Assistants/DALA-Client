@@ -1,4 +1,5 @@
 import { Button } from "@/components/FormElements/Button";
+import Link from "next/link";
 import React, { Dispatch, SetStateAction, useRef } from "react";
 
 interface CourseModalProp {
@@ -23,12 +24,10 @@ export function CoursesModal({ setModalOn }: CourseModalProp) {
       >
         <Button
           text="Sales"
-          backgroundColor="#004AAD36"
           rounded="8px"
           paddingBlock="8px"
           paddingInline="22px"
-          color="#004AAD"
-          className="sales-button"
+          className="bg-[#004AAD36] text-mine hover:bg-[#004AAD] hover:text-white"
         />
         <h3 className="font-bold text-[24px] mt-[17px]">
           Build A Profitable Online Business Using A Sales Funnel
@@ -65,16 +64,15 @@ export function CoursesModal({ setModalOn }: CourseModalProp) {
           </div>
         </div>
         <div className="mt-[36px]">
-          <div>
+          <Link href={"/courses/view"}>
             <Button
               text="View Course"
-              backgroundColor="#004AAD"
               paddingBlock="19px"
               width="100%"
               paddingInline="19px"
-              color="white"
+              className="bg-mine text-white"
             />
-          </div>
+          </Link>
           <Button
             text="Save for later"
             backgroundColor="#fff"

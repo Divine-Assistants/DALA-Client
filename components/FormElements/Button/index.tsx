@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 
 interface ButtonProps {
   color?: string;
@@ -17,17 +18,14 @@ interface ButtonProps {
   width?: string;
   mt?: string;
   ml?: string;
-  hover?: string;
   className?: string;
   paddingRight?: string;
   paddingLeft?: string;
 }
 
 export function Button({
-  color = "#004AAD",
   paddingBlock = "11px",
   paddingInline = "55px",
-  backgroundColor = "#fff",
   paddingRight,
   paddingLeft,
   rounded = "15px",
@@ -45,12 +43,10 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={className}
+      className={classnames(className)}
       style={{
-        color: `${color}`,
         paddingBlock: `${paddingBlock}`,
         paddingInline: `${paddingInline}`,
-        backgroundColor: `${backgroundColor}`,
         fontWeight: weight,
         borderRadius: `${rounded}`,
         border: `${border}`,
@@ -62,7 +58,7 @@ export function Button({
         display: "block",
         paddingRight: `${paddingRight}`,
         paddingLeft: `${paddingLeft}`,
-        transition: "all 0.5s linear",
+        transition: "all 0.3s linear",
       }}
     >
       {src && (
