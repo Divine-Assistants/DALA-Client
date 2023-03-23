@@ -24,10 +24,10 @@ export default function Home() {
       <FrontSection />
       <div className="h-[151px] relative bg-white">
         <div
-          className=" absolute top-[-30%] left-[50%] h-fit grid grid-cols-3 bottom-0 py-[28px] px-[72px] rounded-[15px] w-[90%] z-50 mx-auto"
+          className=" absolute top-[-30%] left-[50%] h-fit grid grid-cols-3 bottom-0 py-[28px] px-[72px]  rounded-[15px] w-[90%] z-50 mx-auto"
           style={{
             boxShadow: "15px 15px 15px rgba(0, 0, 0, 0.1)",
-            backgroundColor: "#F1F1F1",
+            backgroundColor: "#FAFAFA",
             transform: "TranslateX(-50%)",
           }}
         >

@@ -28,16 +28,28 @@ export function NavBar() {
         >
           <Link href={"/"}>Home</Link>
         </li>
-        <li className="text-[20px]">
+        <li
+          className="text-[20px]"
+          style={router.pathname === "/about" ? { color: "#004AAD" } : {}}
+        >
           <Link href={"/about"}>About</Link>
         </li>
-        <li className="text-[20px]">
+        <li
+          className="text-[20px]"
+          style={router.pathname === "/news" ? { color: "#004AAD" } : {}}
+        >
           <Link href={"/news"}>News/Blogs</Link>
         </li>
-        <li className="text-[20px]">
+        <li
+          className="text-[20px]"
+          style={router.pathname === "/courses" ? { color: "#004AAD" } : {}}
+        >
           <Link href={"/courses"}>Courses</Link>
         </li>
-        <li className="text-[20px]">
+        <li
+          className="text-[20px]"
+          style={router.pathname === "/contact" ? { color: "#004AAD" } : {}}
+        >
           <Link href={"/contact"}>Contact Us</Link>
         </li>
       </ul>

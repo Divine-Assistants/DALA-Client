@@ -21,3 +21,6 @@ export * from "./BlogComponents/BlogCover";
 export * from "./BlogComponents/PopularNewsSection";
 export * from "./BlogComponents/FeaturedBlogSection";
 export * from "./BlogComponents/InspirationImage";
+export * from "./Modals/CoursesModal";
+export * from "./Modals/FilterModal";
+export * from "./CoursesComponents/TopCourses";

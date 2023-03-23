@@ -25,6 +25,7 @@ color: #004AAD;
 
 button{
   font-size: 24px;
+  cursor: pointer;
 }
 
 .FAQ-container{
@@ -49,6 +50,11 @@ color: #8F8F8F;
 
 .footer-input input::placeholder{
   color: #fff;
+}
+
+.sales-button:hover{
+background-color: #004AAD;
+color: #fff;
 }
 
 

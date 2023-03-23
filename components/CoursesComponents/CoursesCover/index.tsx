@@ -15,9 +15,10 @@ export function CoursesCover() {
         </div>
       </div>
       <div className="md:hidden">
-        <h1 className="font-semibold text-[32px]">Courses</h1>
+        <h1 className="font-semibold text-[32px] sm:text-[50px]">Courses</h1>
         <div className="mt-[38px] mb-[22px]">
           <Input
+            name="search-courses"
             type="text"
             placeholder="Search Courses"
             backgroundColor="transparent"
@@ -31,7 +32,7 @@ export function CoursesCover() {
             inputImg="/images/Search-gray.svg"
           />
         </div>
-        <p className="text-[16px] mt-[5px]">
+        <p className="text-[16px] sm:text-[24px] mt-[5px]">
           Explore over 100 courses with certificates and job offers on
           DivineAssistants Learning Academy
         </p>

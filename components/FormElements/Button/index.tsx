@@ -17,6 +17,10 @@ interface ButtonProps {
   width?: string;
   mt?: string;
   ml?: string;
+  hover?: string;
+  className?: string;
+  paddingRight?: string;
+  paddingLeft?: string;
 }
 
 export function Button({
@@ -24,6 +28,8 @@ export function Button({
   paddingBlock = "11px",
   paddingInline = "55px",
   backgroundColor = "#fff",
+  paddingRight,
+  paddingLeft,
   rounded = "15px",
   weight = 400,
   border = "none",
@@ -35,10 +41,11 @@ export function Button({
   width,
   mt,
   ml,
+  className,
 }: ButtonProps) {
   return (
     <button
-      className={`relative h-fit w-fit block`}
+      className={className}
       style={{
         color: `${color}`,
         paddingBlock: `${paddingBlock}`,
@@ -51,6 +58,11 @@ export function Button({
         width: `${width}`,
         marginTop: `${mt}`,
         marginLeft: `${ml}`,
+        position: "relative",
+        display: "block",
+        paddingRight: `${paddingRight}`,
+        paddingLeft: `${paddingLeft}`,
+        transition: "all 0.5s linear",
       }}
     >
       {src && (
