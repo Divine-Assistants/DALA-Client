@@ -25,3 +25,8 @@ export * from "./Modals/CoursesModal";
 export * from "./Modals/FilterModal";
 export * from "./CoursesComponents/TopCourses";
 export * from "./CoursesComponents/PurchaseCourse";
+export * from "./CoursesComponents/PurchaseCourse2";
+export * from "./CoursesComponents/CourseContent";
+export * from "./CoursesComponents/ContentHeading";
+export * from "./CoursesComponents/MainContents";
+export * from "./CoursesComponents/CourseReview";

@@ -1,4 +1,11 @@
-import { Button, PageLayout, PurchaseCourse } from "@/components";
+import {
+  Button,
+  CourseContent,
+  CourseReview,
+  PageLayout,
+  PurchaseCourse,
+  PurchaseCourse2,
+} from "@/components";
 import React from "react";
 
 export default function ViewCourse() {
@@ -55,7 +62,7 @@ export default function ViewCourse() {
                 </div>
               </div>
             </div>
-            <div className="col-span-1 rounded-[15px] overflow-hidden h-[455px] w-full bg-red-300">
+            <div className="col-span-1 rounded-[15px] overflow-hidden h-[455px] w-full">
               <img
                 src="/images/view-course-cover.svg"
                 alt="course cover"
@@ -88,7 +95,7 @@ export default function ViewCourse() {
           <PurchaseCourse />
         </div>
       </section>
-      <section className="px-[28px] xl:px-[95px] py-[83px] grid grid-cols-2 gap-x-[40px] xl:gap-x-[107px]">
+      <section className="px-[28px] xl:px-[95px] py-[83px] grid grid-cols-2 gap-x-[40px] xl:gap-x-[109px]">
         <div>
           <h2 className="font-semibold text-[36px]">Description</h2>
           <p className="font-medium text-[20px] text-justify">
@@ -133,7 +140,7 @@ export default function ViewCourse() {
           </p>
         </div>
         <div>
-          <div>
+          <div className="mb-[54px]">
             <h2 className="font-semibold text-[36px]">What you’ll learn</h2>
             <div className="flex items-center gap-x-[20px]">
               <img src="/images/tick-good-blue.svg" alt="bullet"></img>
@@ -154,8 +161,11 @@ export default function ViewCourse() {
               </p>
             </div>
           </div>
+          <PurchaseCourse2 />
         </div>
       </section>
+      <CourseContent />
+      <CourseReview />
     </PageLayout>
   );
 }

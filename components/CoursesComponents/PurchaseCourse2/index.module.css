@@ -1,0 +1,14 @@
+.courseSummary{
+    list-style-type: disc;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.courseSummary li{
+font-size: 24px;
+font-weight: 600;
+margin-left: 25px;
+
+}
