@@ -30,3 +30,5 @@ export * from "./CoursesComponents/CourseContent";
 export * from "./CoursesComponents/ContentHeading";
 export * from "./CoursesComponents/MainContents";
 export * from "./CoursesComponents/CourseReview";
+export * from "./CoursesComponents/CourseTutor";
+export * from "./CoursesComponents/NewsHighlight";

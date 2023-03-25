@@ -1,10 +1,6 @@
-.contentSummary{
-    display: flex;
-    column-gap: 40px;
-font-size: 20px;
-font-weight: 500;
-}
 
 .contentSummary li:not(li:first-child){
     list-style-type: disc;
 }
+
+

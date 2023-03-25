@@ -50,7 +50,7 @@ export function ContentHeading({
         }
       }}
     >
-      <div className="flex gap-x-[19px]">
+      <div className="flex gap-x-[19px] items-center">
         <img
           src={
             hightlight === true && opened.includes(head)
@@ -59,9 +59,9 @@ export function ContentHeading({
           }
           alt="arrow-right"
         ></img>
-        <p className="font-medium text-[20px]">{head}</p>
+        <p className="font-medium text-[14px] sm:text-[20px]">{head}</p>
       </div>
-      <ul className={styles.contentSummary}>
+      <ul className="flex items-center text-[14px] sm:text-[20px] gap-x-[40px]">
         <li>3 Lectures </li>
         <li>27 Minutes</li>
       </ul>

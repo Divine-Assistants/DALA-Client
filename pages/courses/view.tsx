@@ -2,10 +2,14 @@ import {
   Button,
   CourseContent,
   CourseReview,
+  CourseTutor,
+  NewsHighlight,
   PageLayout,
   PurchaseCourse,
   PurchaseCourse2,
 } from "@/components";
+import { SmallHightlight } from "@/components/CoursesComponents/NewsHighlight/smallHightlight";
+import { Recommend } from "@/components/HomeComponents/Recommendations/Recommend";
 import React from "react";
 
 export default function ViewCourse() {
@@ -95,10 +99,12 @@ export default function ViewCourse() {
           <PurchaseCourse />
         </div>
       </section>
-      <section className="px-[28px] xl:px-[95px] py-[83px] grid grid-cols-2 gap-x-[40px] xl:gap-x-[109px]">
+      <section className=" flex flex-col px-[28px] xl:px-[95px] py-[83px] lg:grid grid-cols-2 gap-x-[40px] xl:gap-x-[109px]">
         <div>
-          <h2 className="font-semibold text-[36px]">Description</h2>
-          <p className="font-medium text-[20px] text-justify">
+          <h2 className="font-semibold text-[24px] sm:text-[36px]">
+            Description
+          </h2>
+          <p className="font-medium text-[14px] sm:text-[20px] text-justify">
             Lorem ipsum dolor sit amet consectetur. Proin at odio gravida at
             ornare quis pulvinar. Tristique consectetur amet id risus nunc.
             Dictumst tempus tincidunt pulvinar tristique convallis elementum
@@ -128,19 +134,40 @@ export default function ViewCourse() {
             fringilla. Adipiscing cursus tempus orci volutpat id tristique. In
             quis dictum dignissim malesuada suspendisse quis in morbi.{" "}
           </p>
-          <h2 className="mt-[57px] font-semibold text-[36px]">Requirements</h2>
-          <p className="font-medium text-[20px] mt-[15px]">
+          <div className="lg:hidden mt-[44px]">
+            <h2 className="text-[24px] font-semibold">
+              What Students Will Learn
+            </h2>
+            <p className="medium text-[14px] mt-[10px]">
+              Lorem ipsum dolor sit amet consectetur. Sollicitudin aliquam orci
+              at ut. Ultrices id lobortis turpis augue. Lectus dolor egestas
+              phasellus congue viverra sit amet venenatis rhoncus. Ornare
+              aliquet pulvinar placerat phasellus tortor posuere. Luctus gravida
+              tristique elementum lacus quisque velit turpis maecenas.
+            </p>
+            <h3 className="font-semibold text-[24px] mt-[44px]">
+              What Students Will Learn
+            </h3>
+            <p className="font-medium text-[14px] mt-[10px]">
+              All Figma files including docs and help
+            </p>
+            <p className="font-medium text-[14px] mt-[10px]">A Certificate</p>
+          </div>
+          <h2 className="mt-[57px] font-semibold text-[24px] sm:text-[36px]">
+            Requirements
+          </h2>
+          <p className="font-medium text-[14px] sm:text-[20px] mt-[15px]">
             A Personal Computer
           </p>
-          <p className="font-medium text-[20px] mt-[15px]">
+          <p className="font-medium text-[14px] sm:text-[20px] mt-[15px]">
             Prior Knowledge of Sales and Business management
           </p>
-          <p className="font-medium text-[20px] mt-[15px]">
+          <p className="font-medium text-[14px] sm:text-[20px] mt-[15px]">
             Knowledge of technical project management tools like Asana and Jira
           </p>
         </div>
         <div>
-          <div className="mb-[54px]">
+          <div className="mb-[54px] hidden lg:block">
             <h2 className="font-semibold text-[36px]">What you’ll learn</h2>
             <div className="flex items-center gap-x-[20px]">
               <img src="/images/tick-good-blue.svg" alt="bullet"></img>
@@ -161,11 +188,51 @@ export default function ViewCourse() {
               </p>
             </div>
           </div>
-          <PurchaseCourse2 />
+          <div className="hidden lg:block">
+            <PurchaseCourse2 />
+          </div>
         </div>
       </section>
       <CourseContent />
       <CourseReview />
+      <CourseTutor />
+      <section className="px-[28px] xl:px-[95px] mt-[200px]">
+        <h2 className="font-semibold text-[36px]">Other Related Courses</h2>
+        <div className="grid grid-cols-3 gap-[20px] mt-[46px]">
+          {[1, 1, 1, 1, 1, 1, 1, 1].map((_, index) => {
+            return (
+              <Recommend
+                coverImg="/images/recommendation-img-1.svg"
+                category="Accounting"
+                description="Accounting-Financial Accounting Total For Beginners"
+                review={25}
+                key={index}
+              />
+            );
+          })}
+        </div>
+      </section>
+      <section className="px-[28px] xl:px-[95px] mt-[200px] mb-[200px]">
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="font-semibold text-[36px]">Other Related Courses</h2>
+            <p className="text-[24px] mt-[10px]">
+              Stay up-to-date with the latest developments and happenings
+            </p>
+          </div>
+          <p className="text-[28px] text-mine cursor-pointer">view all</p>
+        </div>
+        <div className="grid grid-cols-2 gap-[50px] mt-[46px]">
+          <div>
+            <NewsHighlight />
+          </div>
+          <div className="flex flex-col justify-between">
+            {[1, 1, 1].map((_, index) => {
+              return <SmallHightlight />;
+            })}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }
