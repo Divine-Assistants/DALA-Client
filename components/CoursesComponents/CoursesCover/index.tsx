@@ -22,7 +22,6 @@ export function CoursesCover() {
             type="text"
             placeholder="Search Courses"
             backgroundColor="transparent"
-            border="1px solid #ABABAB"
             rounded="10px"
             paddingBlock="10px"
             paddingInline="15px"
@@ -30,6 +29,7 @@ export function CoursesCover() {
             color="#ABABAB"
             paddingRight="60px"
             inputImg="/images/Search-gray.svg"
+            className="border-1 border-[#ABABAB]"
           />
         </div>
         <p className="text-[16px] sm:text-[24px] mt-[5px]">

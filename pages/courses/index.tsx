@@ -76,7 +76,6 @@ export default function Courses() {
             type="text"
             placeholder="Search Courses"
             inputImg="/images/Search-gray.svg"
-            border="1px solid #8F8F8F"
             color="#8F8F8F"
             width="100%"
             rounded="8px"
@@ -84,6 +83,7 @@ export default function Courses() {
             paddingInline="10px"
             paddingRight="50px"
             backgroundColor="transparent"
+            className="border-1 border-[#8F8F8F]"
           />
         </div>
         <>

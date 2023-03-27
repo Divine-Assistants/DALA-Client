@@ -1,21 +1,21 @@
-import { type } from "os";
 import React from "react";
+import classNames from "classnames";
 
 interface InputProps {
   type: string;
-  placeholder: string;
+  placeholder?: string;
   paddingInline?: string;
   paddingBlock?: string;
   backgroundColor?: string;
   size?: string;
-  weight?: string;
+  weight?: number;
   color?: string;
   rounded?: string;
-  border?: string;
   width?: string;
   paddingRight?: string;
   inputImg?: string;
   name: string;
+  className?: string;
 }
 
 export function Input({
@@ -28,16 +28,16 @@ export function Input({
   weight,
   color,
   rounded,
-  border,
   width,
   paddingRight,
   inputImg,
   name,
+  className,
 }: InputProps) {
   return (
     <div className="relative">
       <input
-        className="text-[20px] xl:text-[24px] focus:outline-none"
+        className={classNames(`${"focus:outline-none"} ${className}`)}
         type={type}
         name={name}
         placeholder={placeholder}
@@ -49,7 +49,6 @@ export function Input({
           fontSize: `${size}`,
           color: `${color}`,
           borderRadius: `${rounded}`,
-          border: `${border}`,
           width: `${width}`,
           paddingRight: `${paddingRight}`,
         }}
