@@ -7,10 +7,12 @@ import {
   PageLayout,
   PurchaseCourse,
   PurchaseCourse2,
+  TopCourses,
 } from "@/components";
 import { SmallHightlight } from "@/components/CoursesComponents/NewsHighlight/smallHightlight";
 import { Recommend } from "@/components/HomeComponents/Recommendations/Recommend";
 import React from "react";
+import { News } from "@/components/HomeComponents/LatestNews/News";
 
 export default function ViewCourse() {
   return (
@@ -196,9 +198,35 @@ export default function ViewCourse() {
       <CourseContent />
       <CourseReview />
       <CourseTutor />
-      <section className="px-[28px] xl:px-[95px] mt-[200px]">
+      <section className="px-[28px] mt-[200px] sm:hidden">
+        <h2 className="font-semibold text-[24px]">Other Related Courses</h2>
+        <div className="mt-[20px] flex flex-col gap-y-[30px]">
+          <TopCourses />
+          <TopCourses />
+          <TopCourses />
+        </div>
+      </section>
+      <section className="mt-[144px] px-[28px] md:hidden">
+        <h2 className="font-semibold text-[24px]">Suggested</h2>
+        <div className="grid grid-cols-2 gap-[20px] mt-[20px] mb-[200px]">
+          {[1, 1, 1, 1, 1, 1, 1, 1].map((_, index) => {
+            return (
+              <News
+                coverImg="/images/news1.svg"
+                title="Development"
+                description="8 E-Commerce Email Marketing Best Practices To Boost Your ROI in 2022"
+                content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
+                date="November 9th 2023"
+                link={index}
+                key={index}
+              />
+            );
+          })}
+        </div>
+      </section>
+      <section className="px-[28px] xl:px-[95px] mt-[200px] mb-[200px] hidden md:block">
         <h2 className="font-semibold text-[36px]">Other Related Courses</h2>
-        <div className="grid grid-cols-3 gap-[20px] mt-[46px]">
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-[20px] mt-[46px]">
           {[1, 1, 1, 1, 1, 1, 1, 1].map((_, index) => {
             return (
               <Recommend
@@ -212,10 +240,10 @@ export default function ViewCourse() {
           })}
         </div>
       </section>
-      <section className="px-[28px] xl:px-[95px] mt-[200px] mb-[200px]">
+      <section className="px-[28px] xl:px-[95px] mt-[200px] mb-[200px] hidden lg:block">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="font-semibold text-[36px]">Other Related Courses</h2>
+            <h2 className="font-semibold text-[36px]">Our Latest News</h2>
             <p className="text-[24px] mt-[10px]">
               Stay up-to-date with the latest developments and happenings
             </p>

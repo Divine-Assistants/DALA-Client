@@ -29,6 +29,12 @@ button{
   cursor: pointer;
 }
 
+.img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .FAQ-container{
   border: 1px solid gray;
 }
