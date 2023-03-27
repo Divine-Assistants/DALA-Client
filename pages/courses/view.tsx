@@ -256,7 +256,7 @@ export default function ViewCourse() {
           </div>
           <div className="flex flex-col justify-between">
             {[1, 1, 1].map((_, index) => {
-              return <SmallHightlight />;
+              return <SmallHightlight key={index} />;
             })}
           </div>
         </div>

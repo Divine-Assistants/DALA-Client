@@ -8,8 +8,8 @@ export function FeaturedBlogSection() {
         Featured Blogs
       </h3>
       <div className=" flex flex-col sm:grid grid-cols-2 sm:gap-[30px] xl:gap-[75px] mt-[30px]">
-        {[1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => {
-          return <NewsCover />;
+        {[1, 1, 1, 1, 1, 1, 1, 1].map((_, index) => {
+          return <NewsCover key={index} />;
         })}
       </div>
     </section>

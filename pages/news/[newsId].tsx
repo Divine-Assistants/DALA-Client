@@ -212,7 +212,7 @@ export default function NewsId() {
         </h3>
         <div className="flex flex-col gap-y-[30px] sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[30px]">
           {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
-            (item, index) => {
+            (_, index) => {
               return (
                 <News
                   coverImg="/images/news1.svg"
@@ -221,6 +221,7 @@ export default function NewsId() {
                   content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
                   date="November 9th 2023"
                   link={index}
+                  key={index}
                 />
               );
             }
