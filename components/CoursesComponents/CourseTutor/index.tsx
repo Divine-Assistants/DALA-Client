@@ -40,7 +40,7 @@ export function CourseTutor() {
             text="Learn More"
             paddingBlock="17px"
             paddingInline="29px"
-            className="bg-mine text-white text-[24px] sm:text-[14px]"
+            className="bg-mine text-white text-[14px] sm:text-[24px]"
             mt="15px"
             weight={500}
           />

@@ -29,9 +29,8 @@ export function WhoWeAre() {
               text="Learn More"
               paddingBlock="23px"
               paddingInline="39px"
-              backgroundColor="#004AAD"
-              color="white"
               mt="53px"
+              className="bg-mine text-white text-[20px] sm:text-[28px]"
             />
           </div>
           <div className="md2:hidden">
@@ -40,8 +39,7 @@ export function WhoWeAre() {
               text="Learn More"
               paddingBlock="23px"
               paddingInline="39px"
-              backgroundColor="#004AAD"
-              color="white"
+              className="bg-mine text-white text-[20px] sm:text-[28px]"
               mt="53px"
               width="100%"
             />

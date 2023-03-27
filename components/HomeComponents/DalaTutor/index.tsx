@@ -23,8 +23,7 @@ export function DalaTutor() {
             paddingBlock="18px"
             weight={600}
             size="20px"
-            backgroundColor="#004AAD"
-            color="#fff"
+            className="bg-mine text-white"
           />
         </div>
       </div>

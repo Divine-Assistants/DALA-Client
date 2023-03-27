@@ -68,13 +68,15 @@ export function CourseContent() {
             </div>
           );
         })}
-        <Button
-          text="See More"
-          paddingBlock="15px"
-          width="100%"
-          mt="15px"
-          border="2px solid #1E1E1E"
-        />
+        <div className="sm:hidden">
+          <Button
+            text="See More"
+            paddingBlock="15px"
+            width="100%"
+            mt="15px"
+            border="2px solid #1E1E1E"
+          />
+        </div>
       </div>
     </section>
   );

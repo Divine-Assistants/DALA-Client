@@ -118,7 +118,10 @@ export default function Courses() {
         >
           {myCourses}
           <div className="my-[40px]">
-            <button className="font-semibold text-[20px] text-white bg-[#004AAD] w-full p-5 rounded-[10px]">
+            <button
+              className="font-semibold text-[20px] text-white bg-[#004AAD] w-full p-5 rounded-[10px]"
+              onClick={() => setOpenFilter((val) => !val)}
+            >
               Filter Results
             </button>
           </div>

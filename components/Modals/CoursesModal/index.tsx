@@ -70,18 +70,18 @@ export function CoursesModal({ setModalOn }: CourseModalProp) {
               paddingBlock="19px"
               width="100%"
               paddingInline="19px"
-              className="bg-mine text-white"
+              border="2px solid #004AAD"
+              className="hover:bg-mine text-mine hover:text-white"
             />
           </Link>
           <Button
             text="Save for later"
-            backgroundColor="#fff"
             paddingBlock="19px"
             width="100%"
             paddingInline="19px"
-            color="#004AAD"
             border="2px solid #004AAD"
             mt="15px"
+            className="hover:bg-mine text-mine hover:text-white"
           />
         </div>
       </div>

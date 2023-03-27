@@ -50,15 +50,14 @@ export function PageLayout({ children, title }: LayoutProps) {
                       placeholder="Email Address"
                       paddingBlock="16px"
                       paddingInline="20px"
-                      backgroundColor="rgba(250, 250, 250, 0.49)"
                       rounded="15px"
+                      className="bg-[#FAFAFA7D] text-[16px] sm:text-[24px]"
                     />
                     <Button
                       text="Subscribe"
                       paddingInline="35px"
-                      color="#004AAD"
                       size="24px"
-                      className="bg-white text-[#004AAD]"
+                      className="bg-white text-[#004AAD] text-[16px] sm:text-[24px]"
                     />
                   </div>
                 </div>

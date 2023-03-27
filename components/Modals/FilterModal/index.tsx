@@ -342,19 +342,17 @@ export function FilterModal({ setOpenFilter }: FilterModalProp) {
             size="16px"
             width="50%"
             border="2px solid #004AAD"
-            className="bg-mine text-white"
+            className="hover:bg-mine text-mine hover:text-white"
           />
           <Button
             text="Cancel All"
             paddingBlock="14px"
             paddingInline="43px"
-            backgroundColor="#fff"
-            color="#DA063F"
             border="2px solid #DA063F"
             weight={600}
             size="16px"
             width="50%"
-            className="text-[#DA063F] hover:bg-[#DA063F] hover:text-white"
+            className="text-[#DA063F] text-[#DA063F] hover:bg-[#DA063F] hover:text-white"
           />
         </div>
       </div>

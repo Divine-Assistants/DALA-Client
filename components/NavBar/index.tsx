@@ -23,7 +23,7 @@ export function NavBar() {
       </Link>
       <ul className="hidden md:flex items-center gap-x-[76px]">
         <li
-          className="text-[24px]"
+          className="text-[20px]"
           style={router.pathname === "/" ? { color: "#004AAD" } : {}}
         >
           <Link href={"/"}>Home</Link>

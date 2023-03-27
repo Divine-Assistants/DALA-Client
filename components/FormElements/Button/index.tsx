@@ -1,16 +1,13 @@
 import React from "react";
-import classnames from "classnames";
+import classNames from "classnames";
 
 interface ButtonProps {
-  color?: string;
   paddingBlock?: string;
   paddingInline?: string;
-  backgroundColor?: string;
   size?: string;
   weight?: number;
   text: string;
   rounded?: string;
-  border?: string;
   src?: string;
   bottom?: string;
   right?: string;
@@ -21,6 +18,7 @@ interface ButtonProps {
   className?: string;
   paddingRight?: string;
   paddingLeft?: string;
+  border?: string;
 }
 
 export function Button({
@@ -30,7 +28,7 @@ export function Button({
   paddingLeft,
   rounded = "15px",
   weight = 400,
-  border = "none",
+  border,
   src,
   shadow,
   bottom = "0",
@@ -43,13 +41,12 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={classnames(className)}
+      className={classNames(className)}
       style={{
         paddingBlock: `${paddingBlock}`,
         paddingInline: `${paddingInline}`,
         fontWeight: weight,
         borderRadius: `${rounded}`,
-        border: `${border}`,
         boxShadow: `${shadow}`,
         width: `${width}`,
         marginTop: `${mt}`,
@@ -59,6 +56,7 @@ export function Button({
         paddingRight: `${paddingRight}`,
         paddingLeft: `${paddingLeft}`,
         transition: "all 0.3s linear",
+        border: `${border}`,
       }}
     >
       {src && (

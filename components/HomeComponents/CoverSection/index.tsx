@@ -20,22 +20,20 @@ export function FrontSection() {
             text="Join for free"
             paddingBlock="18px"
             paddingInline="42px"
-            backgroundColor="#004AAD"
-            color="white"
+            className="bg-mine text-white"
           />
           <Button
             text="Learn from anywhere in the world"
             paddingBlock="16px"
             paddingInline="36px"
-            backgroundColor="#fff"
             size="24px"
             weight={500}
             shadow="9px 9px 31px -5px rgba(0, 0, 0, 0.22)"
             width="332px"
-            color="black"
             src="/images/Polygon1.svg"
             bottom="20px"
             right="36px"
+            className="bg-white"
           />
         </div>
       </div>
@@ -51,10 +49,9 @@ export function FrontSection() {
           <Button
             text="Get Started"
             paddingBlock="18px"
-            backgroundColor="#004AAD"
             size="20px"
-            color="white"
             width="100%"
+            className="bg-mine text-white"
           />
         </div>
       </div>
