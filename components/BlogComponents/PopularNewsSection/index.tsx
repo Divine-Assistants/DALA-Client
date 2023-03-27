@@ -17,6 +17,7 @@ export function PopularNewsSection() {
                 content="Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati..."
                 date="November 9th 2023"
                 link={index}
+                key={index}
               />
             );
           }
