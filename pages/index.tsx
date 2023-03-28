@@ -33,17 +33,26 @@ export default function Home() {
         >
           <div>
             <p className="font-semibold text-[20px] md2:text-[55px] text-center">
-              20k+ <span className="text-[14px] md2:text-[32px]">students</span>
+              20k+{" "}
+              <span className="text-[14px] md2:text-[32px] block sm:inline">
+                students
+              </span>
             </p>
           </div>
           <div>
             <p className="font-semibold text-[20px] md2:text-[55px] text-center">
-              70+ <span className="text-[14px] md2:text-[32px]">tutors</span>
+              70+{" "}
+              <span className="text-[14px] md2:text-[32px] block sm:inline">
+                tutors
+              </span>
             </p>
           </div>
           <div>
             <p className="font-semibold text-[20px] md2:text-[55px] text-center">
-              150+ <span className="text-[14px] md2:text-[32px]">courses</span>
+              150+{" "}
+              <span className="text-[14px] md2:text-[32px] block sm:inline">
+                courses
+              </span>
             </p>
           </div>
         </div>

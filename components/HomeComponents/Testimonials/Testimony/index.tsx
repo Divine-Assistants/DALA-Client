@@ -27,7 +27,9 @@ export function Testimony() {
           ></img>
         </div>
         <div>
-          <p className="font-semibold text-[24px] md2:text-[28px]">James Wan</p>
+          <p className="font-semibold text-[20px] md:text-[24px] md2:text-[28px]">
+            James Wan
+          </p>
           <p className="md2:text-[28px] text-[15px]">Software Engineer</p>
         </div>
       </div>

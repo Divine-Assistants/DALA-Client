@@ -22,8 +22,8 @@ interface ButtonProps {
 }
 
 export function Button({
-  paddingBlock = "11px",
-  paddingInline = "55px",
+  paddingBlock,
+  paddingInline,
   paddingRight,
   paddingLeft,
   rounded = "15px",
