@@ -27,19 +27,15 @@ export function WhoWeAre() {
           <div className="hidden md2:block">
             <Button
               text="Learn More"
-              paddingBlock="23px"
-              paddingInline="39px"
               mt="53px"
-              className="bg-mine text-white text-[20px] sm:text-[28px]"
+              className="bg-mine text-white text-[20px] sm:text-[28px] py-[23px] px-[39px]"
             />
           </div>
           <div className="md2:hidden">
             {" "}
             <Button
               text="Learn More"
-              paddingBlock="23px"
-              paddingInline="39px"
-              className="bg-mine text-white text-[20px] sm:text-[28px]"
+              className="bg-mine text-white text-[20px] sm:text-[28px] py-[23px] px-[39px]"
               mt="53px"
               width="100%"
             />

@@ -2,8 +2,6 @@ import React from "react";
 import classNames from "classnames";
 
 interface ButtonProps {
-  paddingBlock?: string;
-  paddingInline?: string;
   size?: string;
   weight?: number;
   text: string;
@@ -22,8 +20,6 @@ interface ButtonProps {
 }
 
 export function Button({
-  paddingBlock,
-  paddingInline,
   paddingRight,
   paddingLeft,
   rounded = "15px",
@@ -43,8 +39,6 @@ export function Button({
     <button
       className={classNames(className)}
       style={{
-        paddingBlock: `${paddingBlock}`,
-        paddingInline: `${paddingInline}`,
         fontWeight: weight,
         borderRadius: `${rounded}`,
         boxShadow: `${shadow}`,

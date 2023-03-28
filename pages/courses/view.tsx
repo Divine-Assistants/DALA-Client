@@ -87,11 +87,9 @@ export default function ViewCourse() {
           <Button
             text="Sales"
             border="2px solid #004AAD"
-            paddingInline="20px"
-            paddingBlock="10px"
             size="14px"
             weight={600}
-            className="text-[#004AAD]"
+            className="text-[#004AAD] py-[10px] px-[20px]"
           />
           <h1 className="font-bold text-[24px] mt-[15px] text-[#1E1E1E]">
             Build A Profitable Online Business Using A Sales Funnel

@@ -133,12 +133,11 @@ export default function AboutTutor() {
         <div className="md:hidden">
           <Button
             text="View More"
-            paddingBlock="18px"
             size="32px"
             weight={600}
             width="100%"
             mt="41px"
-            border="1.5px solid #1E1E1E"
+            border="1.5px solid #1E1E1E py-[18px]"
           />
         </div>
       </section>
@@ -152,12 +151,12 @@ export default function AboutTutor() {
         <div className="md:hidden">
           <Button
             text="Load More"
-            paddingBlock="15px"
             border="1.5px solid #1E1E1E"
             width="100%"
             size="16px"
             weight={500}
             mt="30px"
+            className="py-[15px]"
           />
         </div>
       </section>

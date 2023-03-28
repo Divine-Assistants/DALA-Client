@@ -25,9 +25,7 @@ export function CoursesModal({ setModalOn }: CourseModalProp) {
         <Button
           text="Sales"
           rounded="8px"
-          paddingBlock="8px"
-          paddingInline="22px"
-          className="bg-[#004AAD36] text-mine hover:bg-[#004AAD] hover:text-white"
+          className="bg-[#004AAD36] text-mine hover:bg-[#004AAD] hover:text-white py-[8px] px-[22px]"
         />
         <h3 className="font-bold text-[24px] mt-[17px]">
           Build A Profitable Online Business Using A Sales Funnel
@@ -67,21 +65,17 @@ export function CoursesModal({ setModalOn }: CourseModalProp) {
           <Link href={"/courses/view"}>
             <Button
               text="View Course"
-              paddingBlock="19px"
               width="100%"
-              paddingInline="19px"
               border="2px solid #004AAD"
-              className="hover:bg-mine text-mine hover:text-white"
+              className="hover:bg-mine text-mine hover:text-white px-[19px] py-[19px]"
             />
           </Link>
           <Button
             text="Save for later"
-            paddingBlock="19px"
             width="100%"
-            paddingInline="19px"
             border="2px solid #004AAD"
             mt="15px"
-            className="hover:bg-mine text-mine hover:text-white"
+            className="hover:bg-mine text-mine hover:text-white p-[19px]"
           />
         </div>
       </div>
