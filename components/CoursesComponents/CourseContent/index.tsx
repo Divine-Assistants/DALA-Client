@@ -70,10 +70,10 @@ export function CourseContent() {
         <div className="sm:hidden">
           <Button
             text="See More"
-            paddingBlock="15px"
             width="100%"
             mt="15px"
             border="2px solid #1E1E1E"
+            className="py-[15px]"
           />
         </div>
       </div>
