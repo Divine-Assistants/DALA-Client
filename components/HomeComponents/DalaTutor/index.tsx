@@ -19,11 +19,9 @@ export function DalaTutor() {
         <div className="flex justify-center mt-[26px]">
           <Button
             text="Become a DALA tutor"
-            paddingInline="19px"
-            paddingBlock="18px"
             weight={600}
             size="20px"
-            className="bg-mine text-white"
+            className="bg-mine text-white px-[19px] py-[18px]"
           />
         </div>
       </div>

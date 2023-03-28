@@ -94,7 +94,6 @@ export default function Courses() {
           >
             <Button
               text="Filters"
-              paddingBlock="10px"
               weight={600}
               size="16px"
               src="/images/filter-gray.svg"
@@ -103,7 +102,7 @@ export default function Courses() {
               paddingLeft="24px"
               paddingRight="61px"
               mt="5px"
-              className="bg-[#DDDDDD] text-[#1E1E1E]"
+              className="bg-[#DDDDDD] text-[#1E1E1E] py-[10px]"
             />
           </div>
         </>

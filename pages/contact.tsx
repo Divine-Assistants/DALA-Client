@@ -110,8 +110,7 @@ export default function Contact() {
             </div>
             <Button
               text="Send Message"
-              paddingBlock="20px"
-              className="text-[20px] md:text-[24px] bg-mine text-white w-full"
+              className="text-[20px] md:text-[24px] bg-mine text-white w-full py-[20px]"
               mt="70px"
             />
           </form>

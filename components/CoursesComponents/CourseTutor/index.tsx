@@ -38,9 +38,7 @@ export function CourseTutor() {
           </div>
           <Button
             text="Learn More"
-            paddingBlock="17px"
-            paddingInline="29px"
-            className="bg-mine text-white text-[14px] sm:text-[24px]"
+            className="bg-mine text-white text-[14px] sm:text-[24px] px-[29px] py-[17px]"
             mt="15px"
             weight={500}
           />
