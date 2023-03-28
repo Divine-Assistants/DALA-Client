@@ -122,11 +122,10 @@ export default function AboutTutor() {
         <div className="hidden md:block">
           <Button
             text="View More"
-            paddingBlock="18px"
             size="32px"
             weight={600}
             width="100%"
-            className="bg-mine text-white"
+            className="bg-mine text-white py-[18px]"
             mt="41px"
           />
         </div>
