@@ -54,7 +54,12 @@ export function NavBar() {
         </li>
       </ul>
       <div className="hidden md:block">
-        <Button text="Log In" border="2px solid #004AAD" width="200px" />
+        <Button
+          text="Log In"
+          border="2px solid #004AAD"
+          width="200px"
+          className="py-[10px]"
+        />
       </div>
       <div className="md:hidden">
         <RxHamburgerMenu className="text-[50px] cursor-pointer" />
