@@ -12,7 +12,7 @@ export function FrequentQuestions() {
         Everything you need to know about Divine Assistants Learning Academy.
         Can’t find the answers you are looking for? Contact our team.
       </p>
-      <div className="mt-[20px] grid grid-cols-1 md2:grid-cols-3 gap-[15px]">
+      <div className="mt-[20px] grid grid-cols-1 md2:grid-cols-2 lg:grid-cols-3 gap-[15px]">
         {[1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => {
           return (
             <Questions
@@ -47,10 +47,7 @@ export function FrequentQuestions() {
         </div>
         <div className="md2:w-[40%]">
           <Button
-            paddingBlock="24px"
-            color="white"
-            backgroundColor="#004AAD"
-            paddingInline="45px"
+            className="bg-mine text-white text-[14px] sm:text-[24px] py-[24px] px-[45px]"
             text="Get in Touch"
             ml="auto"
           />

@@ -1,0 +1,6 @@
+
+.contentSummary li:not(li:first-child){
+    list-style-type: disc;
+}
+
+

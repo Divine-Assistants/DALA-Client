@@ -1,15 +1,11 @@
 import React from "react";
+import classNames from "classnames";
 
 interface ButtonProps {
-  color?: string;
-  paddingBlock?: string;
-  paddingInline?: string;
-  backgroundColor?: string;
   size?: string;
   weight?: number;
   text: string;
   rounded?: string;
-  border?: string;
   src?: string;
   bottom?: string;
   right?: string;
@@ -17,17 +13,18 @@ interface ButtonProps {
   width?: string;
   mt?: string;
   ml?: string;
+  className?: string;
+  paddingRight?: string;
+  paddingLeft?: string;
+  border?: string;
 }
 
 export function Button({
-  color = "#004AAD",
-  paddingBlock = "11px",
-  paddingInline = "55px",
-  backgroundColor = "#fff",
+  paddingRight,
+  paddingLeft,
   rounded = "15px",
-  size = "24px",
   weight = 400,
-  border = "none",
+  border,
   src,
   shadow,
   bottom = "0",
@@ -36,23 +33,24 @@ export function Button({
   width,
   mt,
   ml,
+  className,
 }: ButtonProps) {
   return (
     <button
-      className={`relative h-fit w-fit block`}
+      className={classNames(className)}
       style={{
-        color: `${color}`,
-        paddingBlock: `${paddingBlock}`,
-        paddingInline: `${paddingInline}`,
-        backgroundColor: `${backgroundColor}`,
-        fontSize: `${size}`,
         fontWeight: weight,
         borderRadius: `${rounded}`,
-        border: `${border}`,
         boxShadow: `${shadow}`,
         width: `${width}`,
         marginTop: `${mt}`,
         marginLeft: `${ml}`,
+        position: "relative",
+        display: "block",
+        paddingRight: `${paddingRight}`,
+        paddingLeft: `${paddingLeft}`,
+        transition: "all 0.3s linear",
+        border: `${border}`,
       }}
     >
       {src && (

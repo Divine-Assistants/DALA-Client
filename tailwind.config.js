@@ -15,7 +15,8 @@ module.exports = {
             },
     extend: {
       colors: {
-        mine: '#004AAD'
+        mine: '#004AAD',
+        mine2:'#1E1E1E'
       }
     },
   },

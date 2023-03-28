@@ -23,40 +23,28 @@ export function StartLearning() {
             <div className="mt-[60px] hidden md:flex items-center justify-center gap-x-[28px] learning-button">
               <Button
                 text="Get Started"
-                paddingBlock="18px"
-                paddingInline="42px"
                 border="3px solid #FAFAFA"
-                color="#004AAD"
-                backgroundColor="white"
+                className="bg-transparent hover:bg-white text-white hover:text-mine border-3 border-[#FAFAFA] px-[42px] py-[18px]"
               />
               <Button
                 text="Log In"
-                paddingBlock="18px"
-                paddingInline="42px"
+                className="bg-transparent hover:bg-white text-white hover:text-mine border-3 border-[#FAFAFA] px-[42px] py-[18px]"
                 border="3px solid #FAFAFA"
-                color="white"
-                backgroundColor="#004AAD"
               />
             </div>
             <div className="mt-[60px] md:hidden block items-center justify-center gap-x-[28px] learning-button">
               <Button
                 text="Get Started"
-                paddingBlock="18px"
-                paddingInline="42px"
-                border="3px solid #FAFAFA"
-                color="#004AAD"
-                backgroundColor="white"
                 width="100%"
+                className="bg-transparent hover:bg-white text-white hover:text-mine border-3 border-[#FAFAFA] px-[42px] py-[18px]"
+                border="3px solid #FAFAFA"
               />
               <Button
                 text="Log In"
-                paddingBlock="18px"
-                paddingInline="42px"
                 border="3px solid #FAFAFA"
-                color="white"
-                backgroundColor="#004AAD"
                 width="100%"
                 mt="20px"
+                className="bg-transparent hover:bg-white text-white hover:text-mine border-solid border-3 border-[#FAFAFA] px-[42px] py-[18px]"
               />
             </div>
           </div>

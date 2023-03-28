@@ -16,7 +16,7 @@ export function WhyDala() {
           Why D.A.L.A.?
         </h3>
         <p className="sm:text-[20px] text-[16px] md:text-[28px] mt-[23px] text-justify">
-          Let's face it: you've probably already heard this a million times
+          Lets face it: youve probably already heard this a million times
           before: there are million-in-one programs in the world today that
           educate people and give them free education; nevertheless, there is
           one thing that makes Divine Assistants Learning Academy stand out from

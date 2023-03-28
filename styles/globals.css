@@ -10,6 +10,7 @@
 body{
   font-family: Poppins;
   font-weight: 400;
+  color: #1E1E1E;
   background-color: #F1F1F1;
 }
 
@@ -21,4 +22,54 @@ body{
 .learning-button button:hover{
 background-color: #fff;
 color: #004AAD;
+}
+
+button{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.FAQ-container{
+  border: 1px solid gray;
+}
+
+.course-category::before{
+content:'';
+width: 12px;
+height: 12px;
+background-color: #fff;
+border: 2px solid #414141;
+border-radius: 3px;
+position: absolute;
+left: -20px;
+top: 5px;
+}
+
+.select-input-container input::placeholder{
+color: #8F8F8F;
+}
+
+.footer-input input::placeholder{
+  color: #fff;
+}
+
+.sales-button:hover{
+background-color: #004AAD;
+color: #fff;
+}
+
+
+@media screen and (max-width: 640px) {
+  button {
+    font-size: 16px;
+  }
+  .FAQ-container{
+  border: 0;
+}
 }

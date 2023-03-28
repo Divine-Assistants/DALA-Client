@@ -1,5 +1,6 @@
 export * from "./NavBar/index";
 export * from "./FormElements/Button/index";
+export * from "./FormElements/Select/index";
 export * from "./HomeComponents/CoverSection/index";
 export * from "./HomeComponents/WhoWeAre/index";
 export * from "./HomeComponents/Gain";
@@ -16,6 +17,7 @@ export * from "./HomeComponents/StartLearning";
 export * from "./HomeComponents/DalaTutor/index";
 export * from "./PageLayout/index";
 export * from "./FormElements/Input";
+<<<<<<< HEAD
 export * from "./AboutComponents/About/index";
 export * from "./AboutComponents/Aims/index";
 export * from "./AboutComponents/Events/index";
@@ -24,3 +26,20 @@ export * from "./AboutComponents/Solution/index";
 export * from "./AboutComponents/System/index";
 export * from "./AboutComponents/Tutor/index";
 export * from "./AboutComponents/Vision/index";
+=======
+export * from "./BlogComponents/BlogCover";
+export * from "./BlogComponents/PopularNewsSection";
+export * from "./BlogComponents/FeaturedBlogSection";
+export * from "./BlogComponents/InspirationImage";
+export * from "./Modals/CoursesModal";
+export * from "./Modals/FilterModal";
+export * from "./CoursesComponents/TopCourses";
+export * from "./CoursesComponents/PurchaseCourse";
+export * from "./CoursesComponents/PurchaseCourse2";
+export * from "./CoursesComponents/CourseContent";
+export * from "./CoursesComponents/ContentHeading";
+export * from "./CoursesComponents/MainContents";
+export * from "./CoursesComponents/CourseReview";
+export * from "./CoursesComponents/CourseTutor";
+export * from "./CoursesComponents/NewsHighlight";
+>>>>>>> 02f5e9af5b55fbf922cad5892062aa09204d570e
