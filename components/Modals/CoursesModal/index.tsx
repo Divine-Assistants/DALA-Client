@@ -41,7 +41,7 @@ export function CoursesModal({ setModalOn }: CourseModalProp) {
         </div>
         <p className="text-[17px] font-semibold">
           Everything you need to know about starting a business. Common errors
-          associated with new businessess and firms{" "}
+          associated with new businessess and firms
         </p>
         <div className="mt-[17px] flex flex-col gap-y-[6px]">
           <div className="flex gap-x-[10px]">

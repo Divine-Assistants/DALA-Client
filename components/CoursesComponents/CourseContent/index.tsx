@@ -50,13 +50,12 @@ export function CourseContent() {
       <div className="mt-[39px] flex flex-col gap-y-[35px]">
         {headings.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <ContentHeading
                 head={item}
                 opened={opened}
                 setOpened={setOpened}
                 allOpen={allOpen}
-                key={index}
               />
               {opened.includes(item) && (
                 <div>
