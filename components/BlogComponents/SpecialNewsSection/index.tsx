@@ -3,7 +3,7 @@ import React from "react";
 export function SpecialNewsSection() {
   return (
     <section className="md:px-[28px] xl:px-[95px] py-[236px] xl:py-[412px]">
-      <div className="relative overflow-hidden md:rounded-[15px] h-[1000px] md:h-[800px] md2:h-[600px] md:grid place-items-center">
+      <div className="relative overflow-hidden md:rounded-[15px] h-[1700px] xs:h-[1500px] sm:h-[1000px] md:h-[800px] md2:h-[600px] md:grid place-items-center">
         <img
           src="/images/blue-background.svg"
           alt="background"
