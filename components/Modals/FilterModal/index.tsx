@@ -336,23 +336,19 @@ export function FilterModal({ setOpenFilter }: FilterModalProp) {
         <div className="mt-[207px] flex items-center gap-x-[30px] justify-center">
           <Button
             text="Filter"
-            paddingBlock="14px"
-            paddingInline="43px"
             weight={600}
             size="16px"
             width="50%"
             border="2px solid #004AAD"
-            className="hover:bg-mine text-mine hover:text-white"
+            className="hover:bg-mine text-mine hover:text-white py-[14px] px-[43px]"
           />
           <Button
             text="Cancel All"
-            paddingBlock="14px"
-            paddingInline="43px"
             border="2px solid #DA063F"
             weight={600}
             size="16px"
             width="50%"
-            className="text-[#DA063F] text-[#DA063F] hover:bg-[#DA063F] hover:text-white"
+            className="text-[#DA063F] text-[#DA063F] hover:bg-[#DA063F] hover:text-white py-[14px] px-[43px]"
           />
         </div>
       </div>
