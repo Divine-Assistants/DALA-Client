@@ -30,11 +30,9 @@ export function PurchaseCourse() {
           <p className="font-semibold text-[28px] text-mine">$84.99</p>
           <Button
             text="Purchase"
-            paddingBlock="10px"
-            paddingInline="10px"
             size="16px"
             weight={600}
-            className="bg-[#004AAD1A] text-mine hover:bg-mine hover:text-white"
+            className="bg-[#004AAD1A] text-mine hover:bg-mine hover:text-white py-[10px] px-[10px]"
           />
         </div>
         <div className="mt-[11px] flex items-center gap-x-[10px]">
@@ -66,9 +64,8 @@ export function PurchaseCourse() {
           mt="41.5px"
           weight={600}
           size="18px"
-          paddingInline="14px"
           width="100%"
-          className="bg-mine text-white"
+          className="bg-mine text-white px-[14px]"
           rounded="5px"
         />
       </div>

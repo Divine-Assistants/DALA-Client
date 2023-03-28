@@ -20,9 +20,7 @@ export function PurchaseCourse2() {
           <p className="font-semibold text-[50px] text-mine">$ 84.99</p>
           <Button
             text="Purchase"
-            className="bg-[#004AAD1A] text-mine hover:bg-mine hover:text-white"
-            paddingBlock="18px"
-            paddingInline="60px"
+            className="bg-[#004AAD1A] text-mine hover:bg-mine hover:text-white py-[18px] px-[60px]"
             size="24px"
             weight={600}
           />
@@ -40,9 +38,8 @@ export function PurchaseCourse2() {
         </div>
         <Button
           text="Start Learning"
-          paddingBlock="18px"
           width="100%"
-          className="text-white bg-mine"
+          className="text-white bg-mine py-[18px]"
           weight={600}
           size="24px"
           mt="46px"
