@@ -55,9 +55,8 @@ export function PageLayout({ children, title }: LayoutProps) {
                     />
                     <Button
                       text="Subscribe"
-                      paddingInline="35px"
                       size="24px"
-                      className="bg-white text-[#004AAD] text-[16px] sm:text-[24px]"
+                      className="bg-white text-[#004AAD] text-[16px] sm:text-[24px] py-[18px] px-[35px]"
                     />
                   </div>
                 </div>

@@ -47,9 +47,7 @@ export function FrequentQuestions() {
         </div>
         <div className="md2:w-[40%]">
           <Button
-            paddingBlock="24px"
-            className="bg-mine text-white text-[14px] sm:text-[24px]"
-            paddingInline="45px"
+            className="bg-mine text-white text-[14px] sm:text-[24px] py-[24px] px-[45px]"
             text="Get in Touch"
             ml="auto"
           />
