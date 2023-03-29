@@ -143,7 +143,7 @@ export default function AboutTutor() {
       <section className="px-[28px] xl:px-[95px] mt-[200px] mb-[200px]">
         <h2 className="text-[36px] font-semibold">Tutor Reviews</h2>
         <div className="flex flex-col gap-y-[70px] mt-[48px]">
-          {[1, 1, 1, 1].map((item, index) => {
+          {[1, 1, 1, 1].map((_, index) => {
             return <StudentsReview key={index} />;
           })}
         </div>
