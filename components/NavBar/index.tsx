@@ -15,7 +15,7 @@ export function NavBar() {
       {<MobileNavModal openModal={openModal} setOpenModal={setOpenModal} />}
       <header
         className="py-[13px] px-[31px] md:px-[99px] flex items-center gap-x-[5%] justify-between fixed w-full border-b-1 nav-bar md:bg-white overflow-hidden"
-        style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.08)", zIndex: 50 }}
+        style={{ zIndex: 50 }}
       >
         <Link href={"/"}>
           <div className="h-[94px] w-[79px]">

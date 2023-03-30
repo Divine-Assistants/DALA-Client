@@ -1,6 +1,6 @@
 import { Button } from "@/components/FormElements/Button";
 import Link from "next/link";
-import React, { Dispatch, SetStateAction, useRef } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 
 interface CourseModalProp {
   setModalOn: Dispatch<SetStateAction<boolean>>;
