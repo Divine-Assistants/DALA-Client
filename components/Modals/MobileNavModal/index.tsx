@@ -40,7 +40,7 @@ export function MobileNavModal({ openModal, setOpenModal }: ModalProp) {
         style={{ overflowY: "scroll" }}
       >
         <h1 className="font-medium text-[15px] mt-[25px]">Navigation</h1>
-        <ul className="mt-[10px] flex flex-col gap-y-[10px]">
+        <ul className="mt-[10px] flex flex-col" style={{ rowGap: "10px" }}>
           <Link
             href={"/"}
             className="py-[15px] px-[24px] flex justify-between items-center bg-[#004AAD1A] rounded-[5px]"
