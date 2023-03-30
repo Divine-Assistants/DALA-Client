@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface NewsProps {
   coverImg: string;
@@ -22,11 +23,13 @@ export function News({
     <Link href={`/news/${link}`}>
       <div className="rounded-[15px] lg:hover:bg-gray-300 cursor-pointer p-[10px]">
         <div className="rounded-[15px] h-[50%] overflow-hidden">
-          <img
+          <Image
             src={coverImg}
             alt="news cover"
             className="w-full h-full object-cover"
-          ></img>
+            width={331}
+            height={286}
+          />
         </div>
         <div className="mt-[15px]">
           <p className="font-bold text-[10px] md2:text-[15px] text-mine">

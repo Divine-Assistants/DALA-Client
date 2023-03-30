@@ -1,15 +1,18 @@
+import Image from "next/image";
 import React from "react";
 
 export function WhyDala() {
   return (
     <section className="flex flex-col-reverse lg:grid grid-cols-2 px-[28px] lg:px-[95px]">
-      <div className="grid place-items-center h-full rounded-[15px] overflow-hidden">
-        <img
+      <div className="grid place-items-center h-full rounded-[15px] overflow-hidden lg:h-[80%] xl:h-full">
+        <Image
           src="/images/why-dala-img.svg"
           alt="sample"
           className="h-full"
           style={{ objectFit: "cover" }}
-        ></img>
+          width={794}
+          height={854}
+        />
       </div>
       <div className="lg:pl-[100px] py-[50px]">
         <h3 className="font-semibold text-[24px] md:text-[40px] lg:text-[50px]">

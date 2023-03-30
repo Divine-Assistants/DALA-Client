@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface PartnersProps {
@@ -10,7 +11,13 @@ export function Partner({ coverImg, name, portfolio }: PartnersProps) {
   return (
     <div className="rounded-[15px] overflow-hidden">
       <div>
-        <img src={coverImg} alt="partner" className="w-full object-cover"></img>
+        <Image
+          src={coverImg}
+          alt="partner"
+          className="w-full object-cover"
+          width={632}
+          height={322}
+        />
       </div>
       <div className="px-[25px] pt-[16px] pb-[25px] bg-mine h-full">
         <p className="font-semibold text-[16px] md:text-[24px] text-white">

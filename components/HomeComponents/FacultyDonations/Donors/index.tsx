@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface DonorsProps {
@@ -10,7 +11,7 @@ export function Donors({ coverImg, name, portfolio }: DonorsProps) {
   return (
     <div className="rounded-[15px] overflow-hidden">
       <div>
-        <img src={coverImg} alt="partner"></img>
+        <Image src={coverImg} alt="partner" width={674} height={346} />
       </div>
       <div className="px-[25px] pt-[16px] pb-[25px] bg-mine h-full">
         <p className="font-semibold md:text-[24px] text-[16px] text-white">

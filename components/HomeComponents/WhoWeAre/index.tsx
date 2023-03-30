@@ -1,4 +1,5 @@
 import { Button } from "@/components/FormElements/Button";
+import Image from "next/image";
 import React from "react";
 
 export function WhoWeAre() {
@@ -6,11 +7,13 @@ export function WhoWeAre() {
     <section className=" px-[28px] lg:px-[135px] md2:grid md2:grid-cols-2 gap-x-[100px] pt-[84px] xl:pt-[320px] pb-[422px]">
       {" "}
       <div>
-        <img
+        <Image
           src="/images/who-we-are.svg"
           alt="sample"
           className="w-full h-full"
-        ></img>
+          width={699}
+          height={640}
+        />
       </div>
       <div className="mt-[40px] md2:mt-0 grid place-items-center">
         <div>

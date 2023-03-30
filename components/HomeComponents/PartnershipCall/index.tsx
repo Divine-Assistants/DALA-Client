@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export function PartnershipCall() {
@@ -27,7 +28,12 @@ export function PartnershipCall() {
           </div>
         </div>
         <div className="grid place-items-center">
-          <img src="/images/partnership-call-img.svg" alt="sample"></img>
+          <Image
+            src="/images/partnership-call-img.svg"
+            alt="sample"
+            width={642}
+            height={684}
+          />
         </div>
       </div>
     </section>

@@ -1,15 +1,18 @@
+import Image from "next/image";
 import React from "react";
 
 export function NewsCover() {
   return (
     <div className="h-full flex flex-col justify-between">
       <div className="rounded-[15px] h-[65%] overflow-hidden">
-        <img
+        <Image
           src="/images/news-main-cover.svg"
           alt="news cover"
           className="h-full"
           style={{ objectFit: "cover" }}
-        ></img>
+          width={726}
+          height={662}
+        />
       </div>
       <div className="mt-[20px]">
         <p className="font-semibold text-[16px] md2:text-[24px] text-mine">

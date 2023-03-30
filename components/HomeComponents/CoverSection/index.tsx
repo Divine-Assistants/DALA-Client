@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Button } from "../../FormElements/Button";
 
@@ -37,7 +38,13 @@ export function FrontSection() {
         className="w-full md2:w-fit md2:absolute md2:right-[-200px] mt-[23px] right-[-50px] xl:right-[25px] xl:bottom-[0] w-[595px]"
         style={{ zIndex: 5 }}
       >
-        <img src="/images/study-girl.svg" alt="model" className="mx-auto"></img>
+        <Image
+          src="/images/study-girl.svg"
+          width={695}
+          height={934}
+          alt="model"
+          className="mx-auto"
+        />
         <div
           className="absolute w-[80%] bottom-[56px] md:hidden grid place-items-center left-[50%]"
           style={{ transform: "translateX(-50%)" }}

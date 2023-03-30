@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CoursesModal } from "@/components";
+import Image from "next/image";
 interface RecommendationProps {
   coverImg: string;
   category: string;
@@ -51,11 +52,13 @@ export function Recommend({
         <div className="flex justify-between items-center mt-[8.5px]">
           <div className="flex items-center gap-x-[20px]">
             <div className="rounded-[50%] w-[50px] h-[50px]">
-              <img
+              <Image
                 src="/images/recommendation-avatar.svg"
                 alt="avatar"
                 className="w-full h-full object-cover"
-              ></img>
+                width={342}
+                height={229}
+              />
             </div>
             <div>
               <p className="font-semibold text-[16px] sm:text-[20px] md:text-[16px]">
