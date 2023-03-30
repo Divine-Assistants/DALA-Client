@@ -17,6 +17,16 @@ export * from "./HomeComponents/StartLearning";
 export * from "./HomeComponents/DalaTutor/index";
 export * from "./PageLayout/index";
 export * from "./FormElements/Input";
+<<<<<<< HEAD
+export * from "./AboutComponents/About/index";
+export * from "./AboutComponents/Aims/index";
+export * from "./AboutComponents/Events/index";
+export * from "./AboutComponents/Learn/index";
+export * from "./AboutComponents/Solution/index";
+export * from "./AboutComponents/System/index";
+export * from "./AboutComponents/Tutor/index";
+export * from "./AboutComponents/Vision/index";
+=======
 export * from "./BlogComponents/BlogCover";
 export * from "./BlogComponents/PopularNewsSection";
 export * from "./BlogComponents/FeaturedBlogSection";
@@ -32,3 +42,4 @@ export * from "./CoursesComponents/MainContents";
 export * from "./CoursesComponents/CourseReview";
 export * from "./CoursesComponents/CourseTutor";
 export * from "./CoursesComponents/NewsHighlight";
+>>>>>>> 02f5e9af5b55fbf922cad5892062aa09204d570e
