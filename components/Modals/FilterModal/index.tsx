@@ -13,7 +13,7 @@ export function FilterModal({ setOpenFilter }: FilterModalProp) {
 
   return (
     <div
-      className="w-[100vw] top-0 left-0 h-[100vh] fixed z-10 flex justify-center  pt-[130px] pb-[40px]"
+      className="w-[100vw] top-0 left-0 h-[100vh] fixed z-50 flex justify-center  pt-[130px] pb-[40px]"
       style={{ overflowY: "auto", backgroundColor: "rgba(0,0,0,0.5)" }}
       onClick={() => setOpenFilter((val) => !val)}
     >

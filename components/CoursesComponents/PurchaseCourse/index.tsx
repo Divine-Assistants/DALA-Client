@@ -65,7 +65,7 @@ export function PurchaseCourse() {
           weight={600}
           size="18px"
           width="100%"
-          className="bg-mine text-white px-[14px]"
+          className="bg-mine text-white px-[14px] py-[14px]"
           rounded="5px"
         />
       </div>

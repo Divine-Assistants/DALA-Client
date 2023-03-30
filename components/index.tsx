@@ -40,3 +40,4 @@ export * from "./AboutComponents/Tutor/index";
 export * from "./AboutComponents/Vision/index";
 export * from "./AboutComponents/Learn";
 export * from "./AboutComponents/Solution";
+export * from "./Modals/MobileNavModal";
