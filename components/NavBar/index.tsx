@@ -58,14 +58,14 @@ export function NavBar() {
             <Link href={"/contact"}>Contact Us</Link>
           </li>
         </ul>
-        <div className="hidden sm:block">
+        <Link href={"/login"} className="hidden sm:block">
           <Button
             text="Log In"
             border="2px solid #004AAD"
             width="200px"
             className="py-[10px]"
           />
-        </div>
+        </Link>
         <div className="sm:hidden" onClick={() => setOpenModal((val) => !val)}>
           <RxHamburgerMenu className="text-[50px] cursor-pointer" />
         </div>
