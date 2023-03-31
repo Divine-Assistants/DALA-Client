@@ -106,7 +106,7 @@ export default function SigninMethod() {
             </div>
           </div>
           <p className="font-medium text-[20px] mt-[40px]">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
             <Link href="signup" className="text-mine">
               Sign Up
             </Link>
