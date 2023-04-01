@@ -58,7 +58,7 @@ export function NavBar() {
             <Link href={"/contact"}>Contact Us</Link>
           </li>
         </ul>
-        <Link href={"/login"} className="hidden sm:block">
+        <Link href={"/signup"} className="hidden sm:block">
           <Button
             text="Log In"
             border="2px solid #004AAD"
