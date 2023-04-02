@@ -1,6 +1,6 @@
 import { NavBar } from "@/components";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 interface AuthProps {
   children: React.ReactNode;
@@ -8,11 +8,14 @@ interface AuthProps {
 
 export function AuthLayout({ children }: AuthProps) {
   return (
-    <>
+    <div
+      className="h-[80vh] overflow-hidden mt-[124px]"
+      style={{ overflowY: "auto" }}
+    >
       <NavBar />
       <div
-        className="lg:grid mt-[124px] px-[28px] xl:px-[95px] py-[80px] gap-x-[20px] xl:gap-x-[50px]"
-        style={{ gridTemplateColumns: "1fr 1.3fr" }}
+        className="lg:grid px-[28px] xl:px-[95px] py-[80px] gap-x-[20px] xl:gap-x-[50px]"
+        style={{ gridTemplateColumns: "1fr 1.3fr", overflowY: "auto" }}
       >
         <div className="overflow-hidden rounded-[15px] hidden lg:block">
           <Image
@@ -23,8 +26,8 @@ export function AuthLayout({ children }: AuthProps) {
             className="w-full h-full object-cover"
           />
         </div>
-        {children}
+        <div className="">{children}</div>
       </div>
-    </>
+    </div>
   );
 }
