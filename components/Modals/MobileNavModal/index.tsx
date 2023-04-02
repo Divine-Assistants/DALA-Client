@@ -14,7 +14,7 @@ export function MobileNavModal({ openModal, setOpenModal }: ModalProp) {
   const router = useRouter();
   return (
     <div
-      className="bg-white overflow-auto absolute w-full"
+      className="bg-white overflow-auto absolute top-0 w-full"
       style={
         openModal
           ? { right: "0", transition: "all 0.5s linear", zIndex: 100 }

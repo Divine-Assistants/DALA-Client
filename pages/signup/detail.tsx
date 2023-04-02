@@ -127,7 +127,7 @@ export default function SignupDetail() {
         <p className="font-medium text-[16px] sm:text-[24px] mt-[44px]">
           Take your first course on us
         </p>
-        <div className="flex justify-between mt-[44px] hidden sm:block">
+        <div className="justify-between mt-[44px] hidden sm:flex">
           <Button
             text="Back"
             size="24px"
