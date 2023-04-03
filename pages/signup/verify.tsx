@@ -1,4 +1,4 @@
-import { AuthLayout, Button } from "@/components";
+import { AuthLayout, Button, LoadingModal } from "@/components";
 import React, { useRef, useState } from "react";
 import Link from "next/link";
 
@@ -13,6 +13,7 @@ export default function Verify() {
 
   return (
     <AuthLayout>
+      {/* <LoadingModal /> */}
       <div>
         <h1 className="font-semibold text-center sm:text-left text-[24px] sm:text-[40px]">
           Enter verification code
@@ -67,7 +68,7 @@ export default function Verify() {
               Re-send
             </Link>
           </p>
-          <div>
+          <Link href={"/signup/detail"}>
             <Button
               text="Submit"
               className="py-[18px] text-mine bg-white hover:text-white hover:bg-mine"
@@ -77,8 +78,8 @@ export default function Verify() {
               weight={500}
               mt="40px"
             />
-          </div>
-          <div>
+          </Link>
+          <Link href={"/signup/student"}>
             <Button
               text={"Back"}
               className="py-[18px] text-mine bg-white hover:text-white hover:bg-mine"
@@ -88,7 +89,7 @@ export default function Verify() {
               weight={500}
               mt="20px"
             />
-          </div>
+          </Link>
         </form>
       </div>
     </AuthLayout>

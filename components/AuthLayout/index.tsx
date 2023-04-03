@@ -9,7 +9,7 @@ interface AuthProps {
 export function AuthLayout({ children }: AuthProps) {
   return (
     <div
-      className="h-[80vh] overflow-hidden mt-[124px]"
+      className="h-[80vh] overflow-hidden mt-[124px] relative"
       style={{ overflowY: "auto" }}
     >
       <NavBar />

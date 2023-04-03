@@ -99,7 +99,7 @@ export default function Signup() {
             Sign Up
           </Link>
         </p>
-        <div>
+        <Link href={userCategory ? "/signup/student" : "/"}>
           <Button
             text={userCategory ? "Next" : "Back"}
             className="py-[18px] text-mine bg-white hover:text-white hover:bg-mine"
@@ -109,7 +109,7 @@ export default function Signup() {
             weight={500}
             mt="40px"
           />
-        </div>
+        </Link>
         <div style={userCategory ? { display: "block" } : { display: "none" }}>
           <Button
             text={"Back"}

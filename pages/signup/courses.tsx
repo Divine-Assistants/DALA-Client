@@ -1,4 +1,5 @@
 import { AuthLayout, Button } from "@/components";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function ChooseCourse() {
@@ -126,36 +127,44 @@ export default function ChooseCourse() {
           the lights on! Take your first course on us.
         </p>
         <div className="justify-between mt-[88px] hidden sm:flex">
-          <Button
-            text="Back"
-            size="24px"
-            weight={500}
-            className="px-[52px] py-[18px] bg-mine text-white"
-          />
-          <Button
-            text="Next"
-            size="24px"
-            weight={500}
-            className="px-[52px] py-[18px] bg-mine text-white"
-          />
+          <Link href={"/signup/detail"}>
+            <Button
+              text="Back"
+              size="24px"
+              weight={500}
+              className="px-[52px] py-[18px] bg-mine text-white"
+            />
+          </Link>
+          <Link href={"/signup/success"}>
+            <Button
+              text="Next"
+              size="24px"
+              weight={500}
+              className="px-[52px] py-[18px] bg-mine text-white"
+            />
+          </Link>
         </div>
         <div className="flex flex-col gap-y-[20px] mt-[97px] sm:hidden">
-          <Button
-            text="Back"
-            size="24px"
-            weight={500}
-            className="px-[52px] py-[18px] bg-transparent text-mine hover:bg-mine hover:text-white"
-            border="2px solid #004AAD"
-            width="100%"
-          />
-          <Button
-            text="Next"
-            size="24px"
-            weight={500}
-            className="px-[52px] py-[18px] bg-transparent text-mine hover:bg-mine hover:text-white"
-            border="2px solid #004AAD"
-            width="100%"
-          />
+          <Link href={"/signup/detail"}>
+            <Button
+              text="Back"
+              size="24px"
+              weight={500}
+              className="px-[52px] py-[18px] bg-transparent text-mine hover:bg-mine hover:text-white"
+              border="2px solid #004AAD"
+              width="100%"
+            />
+          </Link>
+          <Link href={"/signup/success"}>
+            <Button
+              text="Next"
+              size="24px"
+              weight={500}
+              className="px-[52px] py-[18px] bg-transparent text-mine hover:bg-mine hover:text-white"
+              border="2px solid #004AAD"
+              width="100%"
+            />
+          </Link>
         </div>
       </div>
     </AuthLayout>

@@ -69,15 +69,17 @@ export default function StudentSignup() {
               Privacy Policy
             </Link>
           </p>
-          <Button
-            text="Next"
-            size="24px"
-            weight={500}
-            className="py-[18px] bg-transparent hover:bg-mine text-mine hover:text-white"
-            border="2px solid #004AAD"
-            width="100%"
-            mt="26px"
-          />
+          <Link href={"/signup/verify"}>
+            <Button
+              text="Next"
+              size="24px"
+              weight={500}
+              className="py-[18px] bg-transparent hover:bg-mine text-mine hover:text-white"
+              border="2px solid #004AAD"
+              width="100%"
+              mt="26px"
+            />
+          </Link>
           <p className="font-medium text-[15px] sm:text-[20px] mt-[20px] sm:mt-[37px] text-center">
             Already have an account?{" "}
             <Link href={"/login"} className="text-mine">
