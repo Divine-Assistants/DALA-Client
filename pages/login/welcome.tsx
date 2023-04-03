@@ -21,7 +21,7 @@ export default function LoginWelcome() {
             <input
               type={"email"}
               placeholder="Enter Email"
-              className="block mt-[15px] p-[15px] bg-transparent rounded-[10px] w-full font-medium text-[16px] sm:text-[20px] placeholder:text-[#9C9C9C] focus:outline-none login-input"
+              className="block mt-[15px] p-[15px] bg-transparent text-mine rounded-[10px] w-full font-medium text-[16px] sm:text-[20px] placeholder:text-[#9C9C9C] focus:outline-none login-input"
             ></input>
           </div>
           <div className="mt-[30px]">
@@ -31,7 +31,7 @@ export default function LoginWelcome() {
             <input
               type={"password"}
               placeholder="Enter Password"
-              className="block mt-[15px] p-[15px] bg-transparent rounded-[10px] w-full font-medium text-[16px] sm:text-[20px] placeholder:text-[#9C9C9C] focus:outline-none login-input"
+              className="block mt-[15px] p-[15px] bg-transparent text-mine rounded-[10px] w-full font-medium text-[16px] sm:text-[20px] placeholder:text-[#9C9C9C] focus:outline-none login-input"
             ></input>
           </div>
           <div className="font-medium text-[15px] sm:text-[20px] mt-[30px] items-center justify-between hidden sm:flex">
@@ -41,7 +41,9 @@ export default function LoginWelcome() {
             </Link>
           </div>
           <div className="font-medium text-[15px] sm:text-[20px] mt-[30px] flex items-center justify-between mt-[5px]">
-            <p className="underline text-mine">Forgot Password?</p>
+            <Link href={"/password/forgot"} className="underline text-mine">
+              Forgot Password?
+            </Link>
             <Link href={"/signup"} className="underline text-mine">
               Become a DALA tutor
             </Link>

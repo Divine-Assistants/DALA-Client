@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 
-export default function Signup() {
+export default function Login() {
   const [userCategory, setUserCategory] = useState<"student" | "tutor" | "">(
     ""
   );
