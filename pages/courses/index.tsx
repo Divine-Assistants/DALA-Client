@@ -65,7 +65,7 @@ export default function Courses() {
               "Popular Courses",
               "Saved",
             ]}
-            border="1px solid #8F8F8F"
+            border="2px solid #8F8F8F"
             paddingBlock="10px"
             paddingInline="15px"
             rounded="10px"
@@ -83,7 +83,8 @@ export default function Courses() {
             paddingInline="10px"
             paddingRight="50px"
             backgroundColor="transparent"
-            className="border-1 border-[#8F8F8F]"
+            className="text-[24px]"
+            border="2px solid gray"
           />
         </div>
         <>

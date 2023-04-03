@@ -1,5 +1,6 @@
 import { Button } from "@/components/FormElements/Button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export function WhoWeAre() {
@@ -28,20 +29,24 @@ export function WhoWeAre() {
             youths and help them acquire new skills.
           </p>
           <div className="hidden md2:block">
-            <Button
-              text="Learn More"
-              mt="53px"
-              className="bg-mine text-white text-[20px] sm:text-[28px] py-[23px] px-[39px]"
-            />
+            <Link href={"/about"}>
+              <Button
+                text="Learn More"
+                mt="53px"
+                className="bg-mine text-white text-[20px] sm:text-[28px] py-[23px] px-[39px]"
+              />
+            </Link>
           </div>
           <div className="md2:hidden">
             {" "}
-            <Button
-              text="Learn More"
-              className="bg-mine text-white text-[20px] sm:text-[28px] py-[23px] px-[39px]"
-              mt="53px"
-              width="100%"
-            />
+            <Link href={"/about"}>
+              <Button
+                text="Learn More"
+                className="bg-mine text-white text-[20px] sm:text-[28px] py-[23px] px-[39px]"
+                mt="53px"
+                width="100%"
+              />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Button, PageLayout } from "@/components";
 import { StudentsReview } from "@/components/CoursesComponents/CourseReview/studentReview";
 import { Recommend } from "@/components/HomeComponents/Recommendations/Recommend";
+import Link from "next/link";
 import React from "react";
 
 export default function AboutTutor() {
@@ -13,19 +14,21 @@ export default function AboutTutor() {
           className="w-full h-full object-cover block hidden md:block"
         ></img>
         <div className="w-full h-full z-20 md:absolute top-0 left-0 px-[28px] lg:px-[95px] py-[50px] lg:py-[80px]  items-center">
-          <div className="flex items-center gap-x-[7px] cursor-pointer">
-            <img
-              src="/images/arrow-left-white.svg"
-              alt="arrow-left"
-              className="hidden md:block"
-            ></img>
-            <img
-              src="/images/arrow-left-black.svg"
-              alt="arrow-left"
-              className="md:hidden"
-            ></img>
-            <p className="font-semibold text-[20px] md:text-white">Go Back</p>
-          </div>
+          <Link href={"/courses/view"}>
+            <div className="flex items-center gap-x-[7px] cursor-pointer">
+              <img
+                src="/images/arrow-left-white.svg"
+                alt="arrow-left"
+                className="hidden md:block"
+              ></img>
+              <img
+                src="/images/arrow-left-black.svg"
+                alt="arrow-left"
+                className="md:hidden"
+              ></img>
+              <p className="font-semibold text-[20px] md:text-white">Go Back</p>
+            </div>
+          </Link>
           <div className="flex flex-col gap-y-[20px] md:grid grid-cols-3 gap-x-[50px] mt-[16px]">
             <div className="col-span-1 rounded-[15px] overflow-hidden img md:h-[50%] lg:h-full">
               <img src="/images/tutor-picture.svg" alt="tutor"></img>

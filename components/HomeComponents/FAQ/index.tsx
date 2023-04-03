@@ -1,6 +1,7 @@
 import { Button } from "@/components/FormElements/Button";
 import React from "react";
 import { Questions } from "./Questions";
+import Link from "next/link";
 
 export function FrequentQuestions() {
   return (
@@ -46,11 +47,13 @@ export function FrequentQuestions() {
           </div>
         </div>
         <div className="md2:w-[40%]">
-          <Button
-            className="bg-mine text-white text-[14px] sm:text-[24px] py-[24px] px-[45px]"
-            text="Get in Touch"
-            ml="auto"
-          />
+          <Link href={"/contact"}>
+            <Button
+              className="bg-mine text-white text-[14px] sm:text-[24px] py-[24px] px-[45px]"
+              text="Get in Touch"
+              ml="auto"
+            />
+          </Link>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/FormElements/Button";
 import React from "react";
 import styles from "./index.module.css";
+import Link from "next/link";
 
 export function PurchaseCourse2() {
   return (
@@ -36,14 +37,17 @@ export function PurchaseCourse2() {
             <li>Life Time Access</li>
           </ul>
         </div>
-        <Button
-          text="Start Learning"
-          width="100%"
-          className="text-white bg-mine py-[18px]"
-          weight={600}
-          size="24px"
-          mt="46px"
-        />
+        <Link href={"/login"}>
+          {" "}
+          <Button
+            text="Start Learning"
+            width="100%"
+            className="text-white bg-mine py-[18px]"
+            weight={600}
+            size="24px"
+            mt="46px"
+          />
+        </Link>
       </div>
     </div>
   );

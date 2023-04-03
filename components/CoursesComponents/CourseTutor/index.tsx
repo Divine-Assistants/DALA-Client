@@ -1,4 +1,5 @@
 import { Button } from "@/components/FormElements/Button";
+import Link from "next/link";
 import React from "react";
 
 export function CourseTutor() {
@@ -36,12 +37,14 @@ export function CourseTutor() {
             <img src="/images/courses-black.svg" alt="star"></img>
             <p className="text-[14px] sm:text-[24px] font-medium">76 Courses</p>
           </div>
-          <Button
-            text="Learn More"
-            className="bg-mine text-white text-[14px] sm:text-[24px] px-[29px] py-[17px]"
-            mt="15px"
-            weight={500}
-          />
+          <Link href={"/courses/tutors/1"}>
+            <Button
+              text="Learn More"
+              className="bg-mine text-white text-[14px] sm:text-[24px] px-[29px] py-[17px]"
+              mt="15px"
+              weight={500}
+            />
+          </Link>
         </div>
       </div>
       <p className="font-medium text-[14px] sm:text-[20px] mt-[43px] text-[#000000] text-justify">

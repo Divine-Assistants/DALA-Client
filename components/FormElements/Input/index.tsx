@@ -16,6 +16,7 @@ interface InputProps {
   inputImg?: string;
   name: string;
   className?: string;
+  border?: string;
 }
 
 export function Input({
@@ -33,6 +34,7 @@ export function Input({
   inputImg,
   name,
   className,
+  border,
 }: InputProps) {
   return (
     <div className="relative">
@@ -51,6 +53,7 @@ export function Input({
           borderRadius: `${rounded}`,
           width: `${width}`,
           paddingRight: `${paddingRight}`,
+          border: `${border}`,
         }}
       ></input>
       {inputImg && (

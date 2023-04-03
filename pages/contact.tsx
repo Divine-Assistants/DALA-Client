@@ -77,11 +77,11 @@ export default function Contact() {
                   rounded="15px"
                   paddingBlock="20px"
                   paddingInline="33px"
-                  size="24px"
+                  size="20px"
                   weight={600}
                   color="#004AAD"
                   width="100%"
-                  className="focus:bg-[#004AAD0F] bg-transparent placeholder:text-mine focus:border-2 border-2 border-[#D9D9D9] focus:border-[#004AAD]"
+                  className="focus:bg-[#004AAD0F] font-medium bg-transparent placeholder:text-mine focus:border-2 border-2 border-[#D9D9D9] focus:border-[#004AAD]"
                 />
               </div>
               <div>
@@ -94,7 +94,7 @@ export default function Contact() {
                   rounded="15px"
                   paddingBlock="20px"
                   paddingInline="33px"
-                  size="30px"
+                  size="20px"
                   weight={600}
                   color="#004AAD"
                   width="100%"
@@ -106,7 +106,7 @@ export default function Contact() {
               <label className="font-semibold text-[20px] block md:text-[24px] mb-[10px]">
                 Message
               </label>
-              <textarea className="focus:bg-[#004AAD0F] bg-transparent focus:outline-none placeholder:text-mine focus:border-2 focus:border-[#004AAD] border-2 border-[#D9D9D9] focus:border-[#004AAD] w-full h-[443px] rounded-[15px]" />
+              <textarea className="focus:bg-[#004AAD0F] p-[20px] text-[16px] sm:text-[20px] text-mine bg-transparent focus:outline-none placeholder:text-mine focus:border-2 focus:border-[#004AAD] border-2 border-[#D9D9D9] focus:border-[#004AAD] w-full h-[443px] rounded-[15px]" />
             </div>
             <Button
               text="Send Message"
