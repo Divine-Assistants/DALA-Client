@@ -1,4 +1,4 @@
-import { AuthLayout, Button, NavBar } from "@/components";
+import { AuthLayout, Button } from "@/components";
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -10,7 +10,7 @@ export default function Signup() {
 
   return (
     <AuthLayout>
-      <div>
+      <div className="w-full">
         <h1 className="font-semibold text-[24px] sm:text-[40px] text-center sm:text-left">
           How are you logging?
         </h1>
@@ -99,10 +99,18 @@ export default function Signup() {
             Sign Up
           </Link>
         </p>
-        <Link href={userCategory ? "/signup/student" : "/"}>
+        <Link
+          href={
+            userCategory === "student"
+              ? "/login/welcome"
+              : userCategory === "tutor"
+              ? "/login/tutor"
+              : "/"
+          }
+        >
           <Button
             text={userCategory ? "Next" : "Back"}
-            className="py-[18px] text-mine bg-white hover:text-white hover:bg-mine"
+            className="py-[18px] text-mine bg-transparent hover:text-white hover:bg-mine"
             border="2px solid #004AAD"
             width="100%"
             size="24px"
@@ -113,7 +121,7 @@ export default function Signup() {
         <div style={userCategory ? { display: "block" } : { display: "none" }}>
           <Button
             text={"Back"}
-            className="py-[18px] text-mine bg-white hover:text-white hover:bg-mine"
+            className="py-[18px] text-mine bg-transparent hover:text-white hover:bg-mine"
             border="2px solid #004AAD"
             width="100%"
             size="24px"

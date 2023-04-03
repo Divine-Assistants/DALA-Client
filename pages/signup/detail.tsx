@@ -11,7 +11,7 @@ export default function SignupDetail() {
 
   return (
     <AuthLayout>
-      <div>
+      <div className="w-full">
         <h1 className="font-semibold text-center sm:text-left text-[24px] sm:text-[40px]">
           About you
         </h1>

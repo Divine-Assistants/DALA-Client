@@ -8,12 +8,9 @@ export function LoadingModal() {
       style={{ zIndex: 50 }}
     >
       <div className="p-[95px] rounded-[15px] bg-white">
-        <Image
-          src={"/images/loader2.svg"}
-          alt="loader"
-          height={172}
-          width={172}
-        />
+        <div className="h-[172px] w-[172px] load rounded-[50%] grid place-items-center">
+          <div className="h-[130px] w-[130px] bg-white rounded-[50%]"></div>
+        </div>
       </div>
     </div>
   );

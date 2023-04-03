@@ -77,6 +77,34 @@ color: #fff;
   outline: none;
 }
 
+.load{
+  background: conic-gradient(from 180deg at 50% 50%, #004AAD 0deg, rgba(0, 74, 173, 0) 360deg);
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.login-input{
+  border: 2px solid gray;
+}
+
+.login-input:focus{
+background-color: #004AAD0F;
+border: 2px solid #004AAD;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 @media screen and (max-width: 640px) {
   button {

@@ -27,7 +27,7 @@ export default function Verify() {
           <div className="my-[75px] flex gap-x-[20px] justify-center md:justify-left">
             <input
               type={"text"}
-              className="p-[15px] font-medium text-[24px] sm:text-[36px] text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
+              className="p-[15px] font-medium text-[24px] sm:text-[36px] bg-transparent text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
               ref={input1}
               onChange={(e) => {
                 setVerificationCode((val) => val + e.target.value);
@@ -36,7 +36,7 @@ export default function Verify() {
             ></input>
             <input
               type={"text"}
-              className="p-[15px] font-medium text-[24px] sm:text-[36px]  text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
+              className="p-[15px] font-medium text-[24px] sm:text-[36px] bg-transparent text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
               ref={input2}
               onChange={(e) => {
                 setVerificationCode((val) => val + e.target.value);
@@ -45,7 +45,7 @@ export default function Verify() {
             ></input>
             <input
               type={"text"}
-              className="p-[15px] font-medium text-[24px] sm:text-[36px] text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
+              className="p-[15px] font-medium text-[24px] sm:text-[36px] bg-transparent text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
               ref={input3}
               onChange={(e) => {
                 setVerificationCode((val) => val + e.target.value);
@@ -54,7 +54,7 @@ export default function Verify() {
             ></input>
             <input
               type={"text"}
-              className="p-[15px] font-medium text-[24px] sm:text-[36px] text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
+              className="p-[15px] font-medium text-[24px] sm:text-[36px] bg-transparent text-mine rounded-[10px] w-[60px] md:w-[100px] text-center verify-input"
               ref={input4}
               onChange={(e) =>
                 setVerificationCode((val) => val + e.target.value)
@@ -71,7 +71,7 @@ export default function Verify() {
           <Link href={"/signup/detail"}>
             <Button
               text="Submit"
-              className="py-[18px] text-mine bg-white hover:text-white hover:bg-mine"
+              className="py-[18px] text-mine bg-transparent hover:text-white hover:bg-mine"
               border="2px solid #004AAD"
               width="100%"
               size="24px"
@@ -82,7 +82,7 @@ export default function Verify() {
           <Link href={"/signup/student"}>
             <Button
               text={"Back"}
-              className="py-[18px] text-mine bg-white hover:text-white hover:bg-mine"
+              className="py-[18px] text-mine bg-transparent hover:text-white hover:bg-mine"
               border="2px solid #004AAD"
               width="100%"
               size="24px"
