@@ -43,3 +43,4 @@ export * from "./AboutComponents/Solution";
 export * from "./Modals/MobileNavModal";
 export * from "./AuthLayout/index";
 export * from "./Modals/LoadingModal";
+export * from "./CoursesComponents/CourseTutor/DALATutors";

@@ -1,4 +1,5 @@
 import { AuthLayout, Button } from "@/components";
+import Link from "next/link";
 import React from "react";
 
 export default function RegistrationSuccess() {
@@ -15,12 +16,14 @@ export default function RegistrationSuccess() {
               log in to resume your seamless learning on DALA
             </p>
           </div>
-          <Button
-            text="Log In"
-            className="font-semibold text-[16px] sm:text-[24px] bg-mine text-white py-[18px]"
-            width="100%"
-            mt="38px"
-          />
+          <Link href="/login/welcome">
+            <Button
+              text="Log In"
+              className="font-semibold text-[16px] sm:text-[24px] bg-mine text-white py-[18px]"
+              width="100%"
+              mt="38px"
+            />
+          </Link>
         </div>
       </div>
     </AuthLayout>
