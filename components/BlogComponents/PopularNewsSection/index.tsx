@@ -1,4 +1,3 @@
-import { NewsCover } from "@/components/HomeComponents/LatestNews/NewsCover";
 import { News } from "@/components/HomeComponents/LatestNews/News";
 import React from "react";
 
