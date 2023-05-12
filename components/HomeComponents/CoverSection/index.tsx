@@ -1,8 +1,24 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../../FormElements/Button";
+import axios, { AxiosResponse } from "axios";
+import { NextApiRequest, NextApiResponse } from "next";
 
 export function FrontSection() {
+  const registerUser = async () => {
+    const response: AxiosResponse = await axios.post(
+      "https://oakandd-api.onrender.com/auth/user/register",
+      {
+        firstName: "Barilelo",
+        lastName: "Miikor",
+        email: "barilelomiikor@gmail.com",
+        password: "123456789",
+        confirmPassword: "123456789",
+      }
+    );
+    console.log(response.data);
+  };
+
   return (
     <section className="md2:h-[1026px] pt-[56px] text-center md2:text-left lg:pt-[50px] relative md2:flex  px-[16px] lg:px-[108px] md2:overflow-hidden">
       <div style={{ flex: 0.5 }} className="xl:mt-[50px]">
@@ -20,6 +36,7 @@ export function FrontSection() {
           <Button
             text="Join for free"
             className="bg-mine text-white py-[18px] px-[42px]"
+            onClick={registerUser}
           />
           <Button
             text="Learn from anywhere in the world"

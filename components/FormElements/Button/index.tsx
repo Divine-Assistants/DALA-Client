@@ -17,6 +17,7 @@ interface ButtonProps {
   paddingRight?: string;
   paddingLeft?: string;
   border?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export function Button({
@@ -34,6 +35,7 @@ export function Button({
   mt,
   ml,
   className,
+  onClick,
 }: ButtonProps) {
   return (
     <button
@@ -52,6 +54,7 @@ export function Button({
         transition: "all 0.3s linear",
         border: `${border}`,
       }}
+      onClick={onClick}
     >
       {src && (
         <img
