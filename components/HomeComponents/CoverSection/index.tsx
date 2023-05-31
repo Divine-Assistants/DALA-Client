@@ -3,20 +3,17 @@ import React from "react";
 import { Button } from "../../FormElements/Button";
 import axios, { AxiosResponse } from "axios";
 import { NextApiRequest, NextApiResponse } from "next";
+import { checkout } from "../checkout";
 
 export function FrontSection() {
-  const registerUser = async () => {
+  const checkout = async (data: any) => {
+    console.log(data);
     const response: AxiosResponse = await axios.post(
-      "https://oakandd-api.onrender.com/auth/user/register",
-      {
-        firstName: "Barilelo",
-        lastName: "Miikor",
-        email: "barilelomiikor@gmail.com",
-        password: "123456789",
-        confirmPassword: "123456789",
-      }
+      "https://oakandd-api.onrender.com/sub-admins/checkout",
+      { items: data }
     );
     console.log(response.data);
+    window.location.assign(response.data.url);
   };
 
   return (
@@ -36,7 +33,14 @@ export function FrontSection() {
           <Button
             text="Join for free"
             className="bg-mine text-white py-[18px] px-[42px]"
-            onClick={registerUser}
+            onClick={() => {
+              checkout([
+                {
+                  price: "price_1NDPgLABhiJUkMxIzdI6Y4k3",
+                  quantity: 3,
+                },
+              ]);
+            }}
           />
           <Button
             text="Learn from anywhere in the world"
